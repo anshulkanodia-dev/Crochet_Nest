@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrochetNest — Admin Dashboard</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="admin-dashboard">
+
+<div class="admin">
+  <aside class="side">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="CrochetNest" style="width:40px;height:40px"></a>
+    <nav class="snav">
+      <a class="active">▣ Products</a>
+      <a href="index.html" target="_blank">↗ View site</a>
+      <a class="sp" id="logout">⤶ Log out</a>
+    </nav>
+  </aside>
+
+  <main class="amain">
+    <div class="atop">
+      <div>
+        <h1>Products</h1>
+        <div class="sub">Manage your catalogue — publish to update the live site.</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <span class="badge-live" id="publish-state"><span class="d"></span> Not connected</span>
+        <button class="btn" id="download-json">Download JSON</button>
+        <button class="btn" id="publish">Publish changes</button>
+        <button class="btn btn-mint" id="add-product">+ Add product</button>
+      </div>
+    </div>
+
+    <div id="gh-notice"></div>
+
+    <div class="stats">
+      <div class="stat"><div class="n" id="s-total">0</div><div class="l">Total products</div></div>
+      <div class="stat"><div class="n" id="s-cats">0</div><div class="l">Categories</div></div>
+      <div class="stat"><div class="n" id="s-avg">₹0</div><div class="l">Average price</div></div>
+      <div class="stat"><div class="n" id="s-ship">0d</div><div class="l">Avg. ship time</div></div>
+    </div>
+
+    <div class="panel-b">
+      <table class="table">
+        <thead>
+          <tr><th>Product</th><th>Category</th><th>Price</th><th>Ships in</th><th style="text-align:right">Actions</th></tr>
+        </thead>
+        <tbody id="prod-rows"></tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<!-- Add/Edit modal -->
+<div class="overlay" id="modal-overlay"></div>
+<div class="modal" id="prod-modal">
+  <div class="mh">
+    <h3 id="modal-title">Add product</h3>
+    <div class="icon-btn" id="modal-close">✕</div>
+  </div>
+  <div class="mb">
+    <div class="field">
+      <label>Product name</label>
+      <input id="f-name" placeholder="e.g. Honey the Bear">
+    </div>
+    <div class="f2">
+      <div class="field">
+        <label>Category</label>
+        <select id="f-category"></select>
+      </div>
+      <div class="field">
+        <label>Price (₹)</label>
+        <input id="f-price" type="number" min="0" placeholder="899">
+      </div>
+    </div>
+    <div class="f2">
+      <div class="field">
+        <label>Estimated shipping date</label>
+        <input id="f-shipdate" type="date">
+      </div>
+      <div class="field">
+        <label>Image URL (optional)</label>
+        <input id="f-image" placeholder="https://…">
+      </div>
+    </div>
+    <div class="f2">
+      <div class="field">
+        <label>Material (optional)</label>
+        <input id="f-material" placeholder="100% cotton yarn">
+      </div>
+      <div class="field">
+        <label>Size (optional)</label>
+        <input id="f-size" placeholder="Approx. 22 cm">
+      </div>
+    </div>
+    <div class="field mb0">
+      <label>Description</label>
+      <textarea id="f-desc" rows="3" placeholder="Materials, size, care instructions, custom options..."></textarea>
+    </div>
+  </div>
+  <div class="mf">
+    <button class="btn" id="modal-cancel">Cancel</button>
+    <button class="btn btn-mint" id="modal-save">Save product</button>
+  </div>
+</div>
+
+<script src="assets/config.js"></script>
+<script src="assets/admin.js"></script>
+</body>
+</html>

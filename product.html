@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrochetNest — Product</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="product">
+
+<div class="marquee">Handmade to order · Free enquiry via WhatsApp &amp; Instagram · One-of-a-kind crochet · Made with love</div>
+
+<header class="header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="CrochetNest"></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="shop.html">Categories</a>
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="icon-btn" title="Search">⌕</div>
+      <div class="icon-btn" data-open-cart title="Cart">🛍<span class="badge" data-cart-badge>0</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="product-root"><div class="spinner"></div></div>
+
+<!-- Cart drawer (shared) -->
+<div class="overlay" id="cart-overlay" data-close-cart></div>
+<aside class="drawer" id="cart-drawer" aria-label="Cart">
+  <div class="dhead">
+    <h3>Your Cart <span class="cc" id="cart-count">· 0 pieces</span></h3>
+    <div class="icon-btn" data-close-cart>✕</div>
+  </div>
+  <div class="dbody" id="cart-items"></div>
+  <div class="dfoot">
+    <div class="drow"><span class="l">Estimated total</span><span class="v" id="cart-total">₹0</span></div>
+    <div class="enq-note">This is an <b>enquiry-only</b> cart. Send your list to confirm availability, custom options &amp; payment. Saved on this device only — it clears if you clear your browser.</div>
+    <div class="enq">
+      <button class="wa" data-wa>Send enquiry on WhatsApp →</button>
+      <button class="ig" data-ig>Enquire via Instagram</button>
+    </div>
+  </div>
+</aside>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
