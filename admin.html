@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrochetNest — Admin sign in</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14181a">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="admin-login">
+
+<div class="auth">
+  <div class="glow"></div>
+  <div style="position:relative;z-index:1;width:100%;max-width:420px">
+
+    <div class="auth-card" id="step-email">
+      <img src="assets/logo.png" alt="CrochetNest">
+      <h2>Admin sign in</h2>
+      <div class="sub">Step 1 — request a one-time code</div>
+      <div class="field">
+        <label>Admin email</label>
+        <input type="email" id="admin-email" readonly>
+      </div>
+      <button class="btn btn-mint btn-block btn-lg" id="send-otp">Send OTP to my email</button>
+      <div class="hint" id="email-hint">A 6-digit code will be emailed to the registered admin address. Codes expire in <span id="ttl">10</span> minutes.</div>
+    </div>
+
+    <div class="auth-card is-hidden" id="step-otp">
+      <img src="assets/logo.png" alt="CrochetNest">
+      <h2>Enter your code</h2>
+      <div class="sub" id="otp-sub">Step 2 — enter the 6-digit code</div>
+      <div class="otp" id="otp-inputs">
+        <input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric">
+      </div>
+      <button class="btn btn-mint btn-block btn-lg" id="verify-otp">Verify &amp; sign in</button>
+      <div class="auth-foot">Didn't get it? <a href="#" id="resend">Resend code</a></div>
+      <div class="hint" id="otp-hint">Only the CrochetNest admin can access this area.</div>
+    </div>
+
+  </div>
+</div>
+
+<script src="assets/config.js"></script>
+<script src="assets/admin.js"></script>
+</body>
+</html>
