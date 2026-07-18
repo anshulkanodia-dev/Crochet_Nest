@@ -19,6 +19,24 @@
   function hash(s) { var h = 0, i; s = String(s); for (i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; } return Math.abs(h); }
   function param(name) { return new URLSearchParams(location.search).get(name); }
 
+  var SITE = "https://anshulkanodia-dev.github.io/Crochet_Nest";
+  function setMeta(sel, attr, val) {
+    var el = document.head.querySelector(sel);
+    if (!el) { el = document.createElement("meta"); document.head.appendChild(el); var parts = sel.match(/\[(.+?)=["']?(.+?)["']?\]/); if (parts) el.setAttribute(parts[1], parts[2]); }
+    el.setAttribute(attr, val);
+  }
+  function setCanonical(url) {
+    var el = document.head.querySelector('link[rel="canonical"]');
+    if (!el) { el = document.createElement("link"); el.setAttribute("rel", "canonical"); document.head.appendChild(el); }
+    el.setAttribute("href", url);
+  }
+  function injectJsonLd(obj) {
+    var s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.textContent = JSON.stringify(obj);
+    document.head.appendChild(s);
+  }
+
   function media(p, withKnot) {
     if (p.image) return '<img class="photo" src="' + esc(p.image) + '" alt="' + esc(p.name) + '">';
     return '<div class="ph ' + swatchFor(p) + '">' + (withKnot ? '<div class="knot"></div>' : "") + "</div>";
@@ -32,6 +50,28 @@
       .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
       .then(function (data) { _products = (data && data.products) || []; return _products; })
       .catch(function (e) { console.error("Failed to load products.json", e); _products = []; return _products; });
+  }
+
+  // Runtime settings (contacts + categories) — admin-managed, from data/settings.json,
+  // falling back to values in config.js.
+  var SETTINGS = {
+    whatsappNumber: CFG.whatsappNumber || "",
+    instagramHandle: CFG.instagramHandle || "",
+    categories: (CFG.categories || []).slice()
+  };
+  var _settingsLoaded = null;
+  function loadSettings() {
+    if (_settingsLoaded) return _settingsLoaded;
+    _settingsLoaded = fetch("data/settings.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(function (s) {
+        if (s && s.whatsappNumber) SETTINGS.whatsappNumber = s.whatsappNumber;
+        if (s && s.instagramHandle) SETTINGS.instagramHandle = s.instagramHandle;
+        if (s && Array.isArray(s.categories) && s.categories.length) SETTINGS.categories = s.categories;
+        return SETTINGS;
+      })
+      .catch(function () { return SETTINGS; });
+    return _settingsLoaded;
   }
 
   /* ---------- cart ---------- */
@@ -91,7 +131,7 @@
 
   function enquireWhatsApp() {
     if (!getCart().length) { toast("Your cart is empty"); return; }
-    var num = (CFG.whatsappNumber || "").replace(/\D/g, "");
+    var num = (SETTINGS.whatsappNumber || "").replace(/\D/g, "");
     var url = "https://wa.me/" + num + "?text=" + encodeURIComponent(enquiryText());
     window.open(url, "_blank");
   }
@@ -99,7 +139,7 @@
     if (!getCart().length) { toast("Your cart is empty"); return; }
     copyText(enquiryText());
     toast("Enquiry copied — paste it in our Instagram DM", true);
-    window.open("https://instagram.com/" + encodeURIComponent(CFG.instagramHandle || ""), "_blank");
+    window.open("https://instagram.com/" + encodeURIComponent(SETTINGS.instagramHandle || ""), "_blank");
   }
   function copyText(t) {
     try { navigator.clipboard && navigator.clipboard.writeText(t); } catch (e) {}
@@ -165,13 +205,20 @@
     loadProducts().then(function (products) {
       var feat = $("#featured-grid");
       if (feat) feat.innerHTML = products.slice(0, 3).map(cardHTML).join("");
-      // category counts
       var counts = {};
       products.forEach(function (p) { counts[p.category] = (counts[p.category] || 0) + 1; });
-      $all("[data-cat-count]").forEach(function (el) {
-        var c = el.getAttribute("data-cat-count");
-        el.textContent = counts[c] || 0;
-      });
+      var tiles = $("#cat-tiles");
+      if (tiles) {
+        var cats = SETTINGS.categories || [];
+        tiles.style.gridTemplateColumns = "repeat(" + Math.min(Math.max(cats.length, 1), 5) + ", 1fr)";
+        tiles.innerHTML = cats.map(function (c, i) {
+          return '<a class="cat-tile" href="shop.html?category=' + encodeURIComponent(c) + '">' +
+            '<div class="ph ' + SWATCHES[i % SWATCHES.length] + '"><div class="knot"></div></div>' +
+            '<span class="cnum">' + (counts[c] || 0) + "</span>" +
+            '<div class="ct-cap"><h4>' + esc(c) + "</h4></div>" +
+          "</a>";
+        }).join("");
+      }
     });
   }
 
@@ -183,6 +230,15 @@
       // counts
       var counts = { All: products.length };
       products.forEach(function (p) { counts[p.category] = (counts[p.category] || 0) + 1; });
+      // build filter list dynamically from settings categories
+      var flist = $("#cat-filters");
+      if (flist) {
+        var cats = ["All"].concat(SETTINGS.categories || []);
+        flist.innerHTML = cats.map(function (cat) {
+          return '<a data-filter="' + esc(cat) + '" href="' + (cat === "All" ? "shop.html" : "shop.html?category=" + encodeURIComponent(cat)) + '">' +
+            esc(cat) + ' <span class="c">' + (counts[cat] || 0) + "</span></a>";
+        }).join("");
+      }
       $all("[data-filter]").forEach(function (a) {
         var cat = a.getAttribute("data-filter");
         var cEl = a.querySelector(".c"); if (cEl) cEl.textContent = counts[cat] || 0;
@@ -212,7 +268,35 @@
     loadProducts().then(function (products) {
       var p = products.filter(function (x) { return x.id === id; })[0];
       if (!p) { root.innerHTML = '<div class="cart-empty" style="padding:100px 0"><span class="em">\uD83E\uDDF6</span>Product not found. <a href="shop.html" style="color:var(--mint)">Back to shop</a></div>'; return; }
-      document.title = "CrochetNest — " + p.name;
+      document.title = p.name + " — CrochetNest";
+      var pUrl = SITE + "/product.html?id=" + encodeURIComponent(p.id);
+      var pImg = p.image || (SITE + "/assets/logo.png");
+      var desc = (p.description || ("Handmade " + p.category + " from CrochetNest.")).slice(0, 300);
+      setMeta('meta[name="description"]', "content", desc);
+      setCanonical(pUrl);
+      setMeta('meta[property="og:title"]', "content", p.name + " — CrochetNest");
+      setMeta('meta[property="og:description"]', "content", desc);
+      setMeta('meta[property="og:url"]', "content", pUrl);
+      setMeta('meta[property="og:image"]', "content", pImg);
+      setMeta('meta[name="twitter:title"]', "content", p.name + " — CrochetNest");
+      setMeta('meta[name="twitter:description"]', "content", desc);
+      setMeta('meta[name="twitter:image"]', "content", pImg);
+      injectJsonLd({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": p.name,
+        "description": desc,
+        "category": p.category,
+        "image": pImg,
+        "brand": { "@type": "Brand", "name": "CrochetNest" },
+        "offers": {
+          "@type": "Offer",
+          "price": String(p.price),
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/MadeToOrder",
+          "url": pUrl
+        }
+      });
       var others = products.filter(function (x) { return x.id !== id; }).slice(0, 3);
       root.innerHTML =
         '<div class="crumbs"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / ' + esc(p.category) + " / " + esc(p.name) + "</div>" +
@@ -270,9 +354,11 @@
     updateBadge();
     renderDrawer();
     var page = document.body.getAttribute("data-page");
-    if (page === "home") renderHome();
-    else if (page === "shop") renderShop();
-    else if (page === "product") renderProduct();
+    loadSettings().then(function () {
+      if (page === "home") renderHome();
+      else if (page === "shop") renderShop();
+      else if (page === "product") renderProduct();
+    });
   });
 
   window.CN = { openDrawer: openDrawer, closeDrawer: closeDrawer };

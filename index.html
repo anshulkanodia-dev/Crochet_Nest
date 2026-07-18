@@ -3,10 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CrochetNest — Handmade crochet, made to order</title>
-<meta name="description" content="A boutique nest of hand-crocheted pieces — amigurumi, wearables and home accents. Browse and enquire via WhatsApp or Instagram.">
+<title>CrochetNest — Handmade Crochet, Made to Order</title>
+<meta name="description" content="CrochetNest is a boutique studio of hand-crocheted, made-to-order pieces — amigurumi soft toys, wearables and home accents. Browse the collection and enquire via WhatsApp or Instagram.">
+<meta name="keywords" content="crochet, handmade crochet, amigurumi, crochet toys, crochet wearables, crochet home decor, CrochetNest, made to order crochet">
+<meta name="author" content="CrochetNest">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14181a">
+<link rel="canonical" href="https://anshulkanodia-dev.github.io/Crochet_Nest/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CrochetNest">
+<meta property="og:title" content="CrochetNest — Handmade Crochet, Made to Order">
+<meta property="og:description" content="A boutique studio of hand-crocheted, made-to-order pieces — amigurumi, wearables and home accents. Browse and enquire via WhatsApp or Instagram.">
+<meta property="og:url" content="https://anshulkanodia-dev.github.io/Crochet_Nest/">
+<meta property="og:image" content="https://anshulkanodia-dev.github.io/Crochet_Nest/assets/logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CrochetNest — Handmade Crochet, Made to Order">
+<meta name="twitter:description" content="Hand-crocheted, made-to-order pieces. Browse and enquire via WhatsApp or Instagram.">
+<meta name="twitter:image" content="https://anshulkanodia-dev.github.io/Crochet_Nest/assets/logo.png">
 <link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CrochetNest",
+  "description": "Boutique studio of hand-crocheted, made-to-order pieces.",
+  "url": "https://anshulkanodia-dev.github.io/Crochet_Nest/",
+  "logo": "https://anshulkanodia-dev.github.io/Crochet_Nest/assets/logo.png"
+}
+</script>
 </head>
 <body data-page="home">
 
@@ -61,20 +87,7 @@
       <div><div class="kick">Browse</div><h2>Shop by category</h2></div>
       <a href="shop.html" class="see">View all →</a>
     </div>
-    <div class="cat-strip">
-      <a class="cat-tile" href="shop.html?category=Amigurumi"><div class="ph g1"><div class="knot"></div></div><span class="cnum" data-cat-count="Amigurumi">0</span></a>
-      <a class="cat-tile" href="shop.html?category=Wearables"><div class="ph g2"><div class="knot"></div></div><span class="cnum" data-cat-count="Wearables">0</span></a>
-      <a class="cat-tile" href="shop.html?category=Home Decor"><div class="ph g5"><div class="knot"></div></div><span class="cnum" data-cat-count="Home Decor">0</span></a>
-      <a class="cat-tile" href="shop.html?category=Bags"><div class="ph g3"><div class="knot"></div></div><span class="cnum" data-cat-count="Bags">0</span></a>
-      <a class="cat-tile" href="shop.html?category=Accessories"><div class="ph g4"><div class="knot"></div></div><span class="cnum" data-cat-count="Accessories">0</span></a>
-    </div>
-    <div class="cat-strip" style="margin-top:14px">
-      <a style="padding:0 4px" href="shop.html?category=Amigurumi"><h4>Amigurumi</h4><span style="color:var(--muted);font-size:13px">Soft toys</span></a>
-      <a style="padding:0 4px" href="shop.html?category=Wearables"><h4>Wearables</h4><span style="color:var(--muted);font-size:13px">Scarves &amp; more</span></a>
-      <a style="padding:0 4px" href="shop.html?category=Home Decor"><h4>Home Decor</h4><span style="color:var(--muted);font-size:13px">Cosy accents</span></a>
-      <a style="padding:0 4px" href="shop.html?category=Bags"><h4>Bags</h4><span style="color:var(--muted);font-size:13px">Totes &amp; pouches</span></a>
-      <a style="padding:0 4px" href="shop.html?category=Accessories"><h4>Accessories</h4><span style="color:var(--muted);font-size:13px">Little extras</span></a>
-    </div>
+    <div class="cat-strip" id="cat-tiles"><div class="spinner"></div></div>
   </div>
 </section>
 

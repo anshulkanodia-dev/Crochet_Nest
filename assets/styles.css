@@ -324,5 +324,18 @@ img { display: block; max-width: 100%; }
   .auth > div[style] { grid-template-columns: 1fr !important; }
 }
 
+/* admin category chips */
+.cat-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.cat-chips .cchip { display: inline-flex; align-items: center; gap: 10px; background: var(--bg); border: 1px solid var(--stroke); border-radius: 999px; padding: 8px 8px 8px 16px; font-size: 14px; color: var(--ink); }
+.cat-chips .cchip button { border: none; background: var(--panel-2); color: var(--ink-2); width: 22px; height: 22px; border-radius: 50%; cursor: pointer; font-size: 13px; line-height: 1; }
+.cat-chips .cchip button:hover { background: var(--coral); color: #fff; }
+.cat-chips .empty { color: var(--muted); font-size: 14px; }
+
+/* home category tile caption */
+.cat-tile { position: relative; }
+.cat-tile .ct-cap { position: absolute; left: 16px; bottom: 14px; z-index: 1; }
+.cat-tile .ct-cap h4 { font-size: 17px; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,.55); }
+.cat-tile .cnum { z-index: 1; }
+
 /* image from real photo */
 .media img.photo, .main img.photo, .im img.photo, .t img.photo { width: 100%; height: 100%; object-fit: cover; }

@@ -152,38 +152,63 @@
   /* ================= GITHUB ================= */
   function ghToken() { return sessionStorage.getItem(TOKEN_KEY) || ""; }
   function ghHeaders() { return { "Authorization": "Bearer " + ghToken(), "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" }; }
-  function ghUrl() { return "https://api.github.com/repos/" + GH.owner + "/" + GH.repo + "/contents/" + GH.productsPath; }
+  function ghUrl(path) { return "https://api.github.com/repos/" + GH.owner + "/" + GH.repo + "/contents/" + path; }
 
-  function ghGet() {
-    return fetch(ghUrl() + "?ref=" + encodeURIComponent(GH.branch) + "&t=" + Date.now(), { headers: ghHeaders() })
+  function ghGetPath(path, fallback) {
+    return fetch(ghUrl(path) + "?ref=" + encodeURIComponent(GH.branch) + "&t=" + Date.now(), { headers: ghHeaders() })
       .then(function (r) {
-        if (r.status === 404) return { data: { products: [] }, sha: null };
+        if (r.status === 404) return { data: fallback, sha: null };
         if (!r.ok) throw new Error("GitHub read failed (" + r.status + ")");
         return r.json().then(function (j) { return { data: JSON.parse(b64DecodeUnicode(j.content)), sha: j.sha }; });
       });
   }
-  function ghPut(dataObj, sha) {
+  function ghPutPath(path, dataObj, sha, message) {
     var body = {
-      message: "Update products via CrochetNest admin",
+      message: message || ("Update " + path + " via CrochetNest admin"),
       content: b64EncodeUnicode(JSON.stringify(dataObj, null, 2) + "\n"),
       branch: GH.branch
     };
     if (sha) body.sha = sha;
-    return fetch(ghUrl(), { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) })
+    return fetch(ghUrl(path), { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) })
       .then(function (r) { if (!r.ok) return r.json().then(function (j) { throw new Error("GitHub write failed: " + (j.message || r.status)); }); return r.json(); });
   }
+  function ghGet() { return ghGetPath(GH.productsPath, { products: [] }); }
 
   /* ================= DASHBOARD ================= */
   function initDashboard() {
     if (!isAuthed()) { location.href = "admin.html"; return; }
 
-    var state = { products: [], sha: null, editingId: null };
+    var state = {
+      products: [], sha: null, editingId: null,
+      settings: {
+        whatsappNumber: CFG.whatsappNumber || "",
+        instagramHandle: CFG.instagramHandle || "",
+        categories: (CFG.categories || []).slice()
+      },
+      settingsSha: null
+    };
 
-    // category select
-    var sel = $("#f-category");
-    (CFG.categories || []).forEach(function (c) { var o = document.createElement("option"); o.value = c; o.textContent = c; sel.appendChild(o); });
+    function populateCategorySelect() {
+      var sel = $("#f-category");
+      var current = sel.value;
+      sel.innerHTML = "";
+      (state.settings.categories || []).forEach(function (c) { var o = document.createElement("option"); o.value = c; o.textContent = c; sel.appendChild(o); });
+      if (current) sel.value = current;
+    }
+    populateCategorySelect();
 
     $("#logout").addEventListener("click", logout);
+
+    // view switching
+    function showView(which) {
+      var isSettings = which === "settings";
+      $("#view-products").classList.toggle("is-hidden", isSettings);
+      $("#view-settings").classList.toggle("is-hidden", !isSettings);
+      $("#nav-products").classList.toggle("active", !isSettings);
+      $("#nav-settings").classList.toggle("active", isSettings);
+    }
+    $("#nav-products").addEventListener("click", function () { showView("products"); });
+    $("#nav-settings").addEventListener("click", function () { showView("settings"); });
 
     renderTokenNotice();
 
@@ -196,7 +221,7 @@
     function renderTokenNotice() {
       var box = $("#gh-notice");
       if (ghToken()) {
-        box.innerHTML = '<div class="notice">Connected to GitHub — changes you publish update <b>' + esc(GH.owner + "/" + GH.repo) + "</b> (" + esc(GH.productsPath) + '). <a href="#" id="gh-disconnect" style="color:var(--mint)">Disconnect</a></div>';
+        box.innerHTML = '<div class="notice">Connected to GitHub — changes you publish update <b>' + esc(GH.owner + "/" + GH.repo) + "</b> (products &amp; settings). <a href=\"#\" id=\"gh-disconnect\" style=\"color:var(--mint)\">Disconnect</a></div>";
         var dc = $("#gh-disconnect"); if (dc) dc.addEventListener("click", function (e) { e.preventDefault(); sessionStorage.removeItem(TOKEN_KEY); setPublishState(); renderTokenNotice(); load(); });
       } else {
         box.innerHTML =
@@ -244,20 +269,35 @@
       computeStats();
     }
 
+    function applyProducts(res) { state.products = (res.data && res.data.products) || []; state.sha = res.sha; renderTable(); }
+    function applySettings(res) {
+      var d = res.data || {};
+      state.settings = {
+        whatsappNumber: d.whatsappNumber || state.settings.whatsappNumber,
+        instagramHandle: d.instagramHandle || state.settings.instagramHandle,
+        categories: Array.isArray(d.categories) && d.categories.length ? d.categories : state.settings.categories
+      };
+      state.settingsSha = res.sha;
+      renderSettings();
+      populateCategorySelect();
+    }
+
+    function loadLocalProducts() { return fetch("data/products.json?t=" + Date.now()).then(function (r) { return r.json(); }).then(function (d) { return { data: d, sha: null }; }); }
+    function loadLocalSettings() { return fetch("data/settings.json?t=" + Date.now()).then(function (r) { return r.json(); }).then(function (d) { return { data: d, sha: null }; }).catch(function () { return { data: {}, sha: null }; }); }
+
     function load(afterConnect) {
       var tb = $("#prod-rows");
       tb.innerHTML = '<tr><td colspan="5"><div class="spinner"></div></td></tr>';
-      var loader = ghToken() ? ghGet() : fetch("data/products.json?t=" + Date.now()).then(function (r) { return r.json(); }).then(function (d) { return { data: d, sha: null }; });
-      loader.then(function (res) {
-        state.products = (res.data && res.data.products) || [];
-        state.sha = res.sha;
-        renderTable();
+      var pLoader = ghToken() ? ghGet() : loadLocalProducts();
+      var sLoader = ghToken() ? ghGetPath(GH.settingsPath, {}) : loadLocalSettings();
+      Promise.all([pLoader, sLoader]).then(function (r) {
+        applyProducts(r[0]);
+        applySettings(r[1]);
         if (afterConnect) toast("Connected — loaded live data", true);
       }).catch(function (err) {
         if (afterConnect) { sessionStorage.removeItem(TOKEN_KEY); setPublishState(); renderTokenNotice(); }
         toast(err.message);
-        // fall back to local file
-        fetch("data/products.json?t=" + Date.now()).then(function (r) { return r.json(); }).then(function (d) { state.products = d.products || []; renderTable(); }).catch(function () { renderTable(); });
+        Promise.all([loadLocalProducts(), loadLocalSettings()]).then(function (r) { applyProducts(r[0]); applySettings(r[1]); }).catch(function () { renderTable(); renderSettings(); });
       });
     }
 
@@ -266,7 +306,7 @@
       state.editingId = product ? product.id : null;
       $("#modal-title").textContent = product ? "Edit product" : "Add product";
       $("#f-name").value = product ? product.name : "";
-      $("#f-category").value = product ? product.category : (CFG.categories || [])[0] || "";
+      $("#f-category").value = product ? product.category : (state.settings.categories || [])[0] || "";
       $("#f-price").value = product ? product.price : "";
       $("#f-image").value = product ? (product.image || "") : "";
       $("#f-material").value = product ? (product.material || "") : "";
@@ -316,28 +356,71 @@
       toast(ghToken() ? "Saved — click Publish to go live" : "Saved locally — Download JSON or connect GitHub", true);
     }
 
-    function publish() {
-      if (!ghToken()) { toast("Connect a GitHub token to publish"); return; }
-      var btn = $("#publish"); btn.disabled = true; btn.textContent = "Publishing…";
-      ghGet().then(function (res) {
-        return ghPut({ products: state.products }, res.sha);
-      }).then(function () {
-        btn.disabled = false; btn.textContent = "Publish changes";
-        toast("Published to the live site \uD83C\uDF89", true);
-      }).catch(function (err) {
-        btn.disabled = false; btn.textContent = "Publish changes";
-        toast(err.message);
-      });
+    /* ---- settings view ---- */
+    function settingsObj() {
+      return {
+        whatsappNumber: state.settings.whatsappNumber || "",
+        instagramHandle: state.settings.instagramHandle || "",
+        categories: (state.settings.categories || []).slice()
+      };
+    }
+    function renderSettings() {
+      $("#set-whatsapp").value = state.settings.whatsappNumber || "";
+      $("#set-instagram").value = state.settings.instagramHandle || "";
+      renderCatChips();
+    }
+    function renderCatChips() {
+      var box = $("#cat-list");
+      var cats = state.settings.categories || [];
+      if (!cats.length) { box.innerHTML = '<span class="empty">No categories yet — add one below.</span>'; return; }
+      box.innerHTML = cats.map(function (c) {
+        return '<span class="cchip">' + esc(c) + '<button data-delcat="' + esc(c) + '" title="Delete">\u2715</button></span>';
+      }).join("");
+    }
+    function readSettingsInputs() {
+      state.settings.whatsappNumber = $("#set-whatsapp").value.replace(/\D/g, "");
+      state.settings.instagramHandle = $("#set-instagram").value.trim().replace(/^@/, "");
+    }
+    function addCategory() {
+      var v = $("#new-cat").value.trim();
+      if (!v) { toast("Enter a category name"); return; }
+      var exists = (state.settings.categories || []).some(function (c) { return c.toLowerCase() === v.toLowerCase(); });
+      if (exists) { toast("That category already exists"); return; }
+      state.settings.categories = (state.settings.categories || []).concat([v]);
+      $("#new-cat").value = "";
+      renderCatChips();
+      populateCategorySelect();
+      toast("Category added — Save & Publish to apply", true);
+    }
+    function deleteCategory(name) {
+      var used = state.products.filter(function (p) { return p.category === name; }).length;
+      var msg = used ? ("Delete category “" + name + "”? " + used + " product(s) use it and will keep this label until you edit them.") : ("Delete category “" + name + "”?");
+      if (!window.confirm(msg)) return;
+      state.settings.categories = (state.settings.categories || []).filter(function (c) { return c !== name; });
+      renderCatChips();
+      populateCategorySelect();
     }
 
-    function downloadJson() {
-      var blob = new Blob([JSON.stringify({ products: state.products }, null, 2) + "\n"], { type: "application/json" });
+    function publishAll(btn, label) {
+      if (!ghToken()) { toast("Connect a GitHub token to publish"); return; }
+      readSettingsInputs();
+      btn.disabled = true; var old = btn.textContent; btn.textContent = "Publishing…";
+      // products first, then settings (fetch fresh shas to avoid conflicts)
+      ghGet().then(function (res) { return ghPutPath(GH.productsPath, { products: state.products }, res.sha, "Update products via CrochetNest admin"); })
+        .then(function () { return ghGetPath(GH.settingsPath, {}); })
+        .then(function (res) { return ghPutPath(GH.settingsPath, settingsObj(), res.sha, "Update settings via CrochetNest admin"); })
+        .then(function () { btn.disabled = false; btn.textContent = old; toast("Published to the live site \uD83C\uDF89", true); load(); })
+        .catch(function (err) { btn.disabled = false; btn.textContent = old; toast(err.message); });
+    }
+
+    function download(name, obj) {
+      var blob = new Blob([JSON.stringify(obj, null, 2) + "\n"], { type: "application/json" });
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
-      a.download = "products.json";
+      a.download = name;
       a.click();
       URL.revokeObjectURL(a.href);
-      toast("Downloaded products.json", true);
+      toast("Downloaded " + name, true);
     }
 
     // wire
@@ -346,8 +429,13 @@
     $("#modal-cancel").addEventListener("click", closeModal);
     $("#modal-overlay").addEventListener("click", closeModal);
     $("#modal-save").addEventListener("click", saveModal);
-    $("#publish").addEventListener("click", publish);
-    $("#download-json").addEventListener("click", downloadJson);
+    $("#publish").addEventListener("click", function () { publishAll($("#publish")); });
+    $("#download-json").addEventListener("click", function () { download("products.json", { products: state.products }); });
+    $("#settings-publish").addEventListener("click", function () { publishAll($("#settings-publish")); });
+    $("#settings-download").addEventListener("click", function () { readSettingsInputs(); download("settings.json", settingsObj()); });
+    $("#add-cat").addEventListener("click", addCategory);
+    $("#new-cat").addEventListener("keydown", function (e) { if (e.key === "Enter") addCategory(); });
+    $("#cat-list").addEventListener("click", function (e) { var d = e.target.getAttribute("data-delcat"); if (d) deleteCategory(d); });
     $("#prod-rows").addEventListener("click", function (e) {
       var ed = e.target.getAttribute("data-edit"); if (ed) { openModal(state.products.filter(function (p) { return p.id === ed; })[0]); return; }
       var dl = e.target.getAttribute("data-del"); if (dl) {

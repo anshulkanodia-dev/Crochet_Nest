@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CrochetNest — Admin Dashboard</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14181a">
 <link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -13,43 +15,86 @@
   <aside class="side">
     <a class="brand" href="index.html"><img src="assets/logo.png" alt="CrochetNest" style="width:40px;height:40px"></a>
     <nav class="snav">
-      <a class="active">▣ Products</a>
+      <a class="active" id="nav-products">▣ Products</a>
+      <a id="nav-settings">⚙ Settings</a>
       <a href="index.html" target="_blank">↗ View site</a>
       <a class="sp" id="logout">⤶ Log out</a>
     </nav>
   </aside>
 
   <main class="amain">
-    <div class="atop">
-      <div>
-        <h1>Products</h1>
-        <div class="sub">Manage your catalogue — publish to update the live site.</div>
-      </div>
-      <div style="display:flex;gap:10px;align-items:center">
-        <span class="badge-live" id="publish-state"><span class="d"></span> Not connected</span>
-        <button class="btn" id="download-json">Download JSON</button>
-        <button class="btn" id="publish">Publish changes</button>
-        <button class="btn btn-mint" id="add-product">+ Add product</button>
-      </div>
-    </div>
-
     <div id="gh-notice"></div>
 
-    <div class="stats">
-      <div class="stat"><div class="n" id="s-total">0</div><div class="l">Total products</div></div>
-      <div class="stat"><div class="n" id="s-cats">0</div><div class="l">Categories</div></div>
-      <div class="stat"><div class="n" id="s-avg">₹0</div><div class="l">Average price</div></div>
-      <div class="stat"><div class="n" id="s-ship">0d</div><div class="l">Avg. ship time</div></div>
-    </div>
+    <!-- ============ PRODUCTS VIEW ============ -->
+    <section id="view-products">
+      <div class="atop">
+        <div>
+          <h1>Products</h1>
+          <div class="sub">Manage your catalogue — publish to update the live site.</div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <span class="badge-live" id="publish-state"><span class="d"></span> Not connected</span>
+          <button class="btn" id="download-json">Download JSON</button>
+          <button class="btn" id="publish">Publish changes</button>
+          <button class="btn btn-mint" id="add-product">+ Add product</button>
+        </div>
+      </div>
 
-    <div class="panel-b">
-      <table class="table">
-        <thead>
-          <tr><th>Product</th><th>Category</th><th>Price</th><th>Ships in</th><th style="text-align:right">Actions</th></tr>
-        </thead>
-        <tbody id="prod-rows"></tbody>
-      </table>
-    </div>
+      <div class="stats">
+        <div class="stat"><div class="n" id="s-total">0</div><div class="l">Total products</div></div>
+        <div class="stat"><div class="n" id="s-cats">0</div><div class="l">Categories</div></div>
+        <div class="stat"><div class="n" id="s-avg">₹0</div><div class="l">Average price</div></div>
+        <div class="stat"><div class="n" id="s-ship">0d</div><div class="l">Avg. ship time</div></div>
+      </div>
+
+      <div class="panel-b">
+        <table class="table">
+          <thead>
+            <tr><th>Product</th><th>Category</th><th>Price</th><th>Ships in</th><th style="text-align:right">Actions</th></tr>
+          </thead>
+          <tbody id="prod-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ SETTINGS VIEW ============ -->
+    <section id="view-settings" class="is-hidden">
+      <div class="atop">
+        <div>
+          <h1>Settings</h1>
+          <div class="sub">Contact channels &amp; categories. Save, then publish to apply on the live site.</div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <button class="btn" id="settings-download">Download JSON</button>
+          <button class="btn btn-mint" id="settings-publish">Save &amp; Publish</button>
+        </div>
+      </div>
+
+      <div class="panel-b" style="padding:24px;margin-bottom:20px">
+        <h3 style="margin:0 0 4px;font-size:18px">Enquiry channels</h3>
+        <div class="sub" style="margin-bottom:18px">Used by the cart's WhatsApp &amp; Instagram enquiry buttons.</div>
+        <div class="f2">
+          <div class="field">
+            <label>WhatsApp number <span style="color:var(--muted)">(country code + number, digits only)</span></label>
+            <input id="set-whatsapp" placeholder="9198XXXXXXXX" inputmode="numeric">
+          </div>
+          <div class="field mb0">
+            <label>Instagram handle <span style="color:var(--muted)">(without @)</span></label>
+            <input id="set-instagram" placeholder="crochetnest">
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-b" style="padding:24px">
+        <h3 style="margin:0 0 4px;font-size:18px">Categories</h3>
+        <div class="sub" style="margin-bottom:18px">Shown in the shop filters and the add/edit product form. Deleting a category does not change existing products.</div>
+        <div id="cat-list" class="cat-chips"></div>
+        <div class="token-row" style="margin-top:16px;max-width:420px">
+          <input id="new-cat" placeholder="New category name" style="flex:1;background:var(--bg);border:1px solid var(--stroke);color:var(--ink);padding:10px 14px;border-radius:10px;font-size:14px">
+          <button class="btn btn-mint" id="add-cat">+ Add</button>
+        </div>
+      </div>
+    </section>
   </main>
 </div>
 

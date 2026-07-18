@@ -6,7 +6,9 @@ Built to be hosted entirely on **GitHub Pages** — no server required.
 - **Visitors** browse the catalogue by category, open product pages, add pieces to a
   cart (stored in the browser), and send a booking **enquiry via WhatsApp or Instagram**.
 - **Admin** signs in with a one-time code (OTP) emailed to the studio address and can
-  **add / edit / delete** products; changes are published back to `data/products.json`.
+  **add / edit / delete** products, **set the WhatsApp / Instagram contacts**, and
+  **add / delete categories**; changes are published back to `data/products.json` and
+  `data/settings.json`.
 
 ## Project structure
 
@@ -24,16 +26,27 @@ assets/
   logo.png            CrochetNest logo
 data/
   products.json       Product catalogue (the site's data source)
+  settings.json       Admin-managed contacts + category list
+robots.txt            Crawler rules (+ sitemap link)
+sitemap.xml           URL list for search engines
 ```
 
 ## Configure
 
-Edit `assets/config.js`:
+Most day-to-day settings are managed by the **admin in the dashboard** (Settings tab)
+and stored in `data/settings.json` — no code editing needed:
 
-- `whatsappNumber` — country code + number, digits only (e.g. `9198XXXXXXXX`).
-- `instagramHandle` — Instagram username, without the `@`.
-- `categories` — the category list used by the shop filters and the admin form.
+- **WhatsApp number** — country code + number, digits only (e.g. `9198XXXXXXXX`).
+- **Instagram handle** — username, without the `@`.
+- **Categories** — the list used by the shop filters and the add/edit product form.
+
+`assets/config.js` holds the remaining, less-frequently changed settings (and fallback
+defaults used if `settings.json` is missing):
+
 - `admin.email` — the address that receives OTP codes.
+- `admin.emailjs` / `admin.devMode` — OTP email delivery (see below).
+- `github` — repository target for publishing edits.
+- `currencySymbol` — currency used across the site.
 
 ### Admin OTP email (EmailJS)
 
@@ -70,3 +83,14 @@ python3 -m http.server 8099
 
 Repo **Settings → Pages → Build and deployment → Deploy from a branch**, choose the
 branch and `/ (root)`. The site is served at `https://<user>.github.io/<repo>/`.
+
+## SEO
+
+- Per-page `<title>` + meta description, Open Graph + Twitter Card tags, and canonical URLs.
+- JSON-LD structured data: `Organization` on the home page and `Product` (with price/currency)
+  injected on each product page.
+- `robots.txt` (admin pages disallowed) and `sitemap.xml`.
+
+The canonical / Open Graph URLs use `https://anshulkanodia-dev.github.io/Crochet_Nest`.
+If you deploy under a different URL (custom domain, different repo), update those absolute
+URLs in the page `<head>`s, in `assets/app.js` (`SITE`), `robots.txt` and `sitemap.xml`.
