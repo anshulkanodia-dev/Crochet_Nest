@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": "honey-the-bear",
+      "name": "Honey the Bear",
+      "category": "Amigurumi",
+      "price": 899,
+      "shipDays": 7,
+      "description": "A huggable, hand-crocheted teddy made with soft milk-cotton yarn and safety eyes. Each Honey is made to order, so tiny variations make yours one of a kind.",
+      "material": "100% cotton yarn \u00b7 fiber fill",
+      "size": "Approx. 22 cm tall",
+      "image": "",
+      "swatch": "g2"
+    },
+    {
+      "id": "blush-granny-scarf",
+      "name": "Blush Granny Scarf",
+      "category": "Wearables",
+      "price": 1250,
+      "shipDays": 10,
+      "description": "A cosy granny-square scarf in soft blush tones, hand-crocheted for chilly evenings. Lightweight, warm and endlessly wearable.",
+      "material": "Acrylic-wool blend",
+      "size": "150 x 20 cm",
+      "image": "",
+      "swatch": "g6"
+    },
+    {
+      "id": "leafy-wall-hanging",
+      "name": "Leafy Wall Hanging",
+      "category": "Home Decor",
+      "price": 650,
+      "shipDays": 5,
+      "description": "A botanical macrame-style wall hanging with crocheted leaves to bring a handmade touch to any room.",
+      "material": "Cotton cord \u00b7 wooden dowel",
+      "size": "40 x 60 cm",
+      "image": "",
+      "swatch": "g5"
+    },
+    {
+      "id": "mini-tote-sage",
+      "name": "Mini Tote \u2014 Sage",
+      "category": "Bags",
+      "price": 980,
+      "shipDays": 8,
+      "description": "A sturdy little market tote in sage green, crocheted with a tight stitch so it holds its shape and your treasures.",
+      "material": "100% cotton yarn",
+      "size": "28 x 30 cm",
+      "image": "",
+      "swatch": "g3"
+    },
+    {
+      "id": "daisy-hair-clips",
+      "name": "Daisy Hair Clips",
+      "category": "Accessories",
+      "price": 320,
+      "shipDays": 3,
+      "description": "A cheerful set of crocheted daisy hair clips. Sold as a pair \u2014 sweet on both little ones and grown-ups.",
+      "material": "Cotton yarn \u00b7 metal clips",
+      "size": "5 cm each",
+      "image": "",
+      "swatch": "g4"
+    },
+    {
+      "id": "ollie-the-octopus",
+      "name": "Ollie the Octopus",
+      "category": "Amigurumi",
+      "price": 750,
+      "shipDays": 6,
+      "description": "A friendly little octopus with curly tentacles. Made to order in your choice of colour.",
+      "material": "100% cotton yarn \u00b7 fiber fill",
+      "size": "Approx. 16 cm",
+      "image": "",
+      "swatch": "g7"
+    },
+    {
+      "id": "cloud-beanie",
+      "name": "Cloud Beanie",
+      "category": "Wearables",
+      "price": 580,
+      "shipDays": 4,
+      "description": "A soft, slouchy beanie that feels like a hug for your head. Stretchy fit for most sizes.",
+      "material": "Merino-blend yarn",
+      "size": "One size",
+      "image": "",
+      "swatch": "g1"
+    },
+    {
+      "id": "coaster-set-4",
+      "name": "Coaster Set of 4",
+      "category": "Home Decor",
+      "price": 420,
+      "shipDays": 5,
+      "description": "A set of four hand-crocheted coasters to protect your tables in style. Washable and reusable.",
+      "material": "100% cotton yarn",
+      "size": "10 cm each",
+      "image": "",
+      "swatch": "g8"
+    }
+  ]
+}
