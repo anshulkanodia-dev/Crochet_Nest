@@ -41,7 +41,7 @@
   }
 
   function media(p, withKnot) {
-    if (p.image) return '<img class="photo" src="' + esc(p.image) + '" alt="' + esc(p.name) + '">';
+    if (p.image) return '<img class="photo" loading="lazy" decoding="async" src="' + esc(p.image) + '" alt="' + esc(p.name) + '">';
     return '<div class="ph ' + swatchFor(p) + '">' + (withKnot ? '<div class="knot"></div>' : "") + "</div>";
   }
 
@@ -202,6 +202,7 @@
       '<div class="body">' +
         '<div class="cat">' + esc(p.category) + "</div>" +
         "<h3>" + esc(p.name) + "</h3>" +
+        (photosOf(p).length > 1 ? '<div class="cat">' + photosOf(p).length + " photos</div>" : "") +
         '<div class="foot"><span class="price">' + esc(priceLabel(p)) + '</span><span class="ship">' + esc(makeLabel(p)) + "</span></div>" +
       "</div>" +
     "</a>";
@@ -210,7 +211,15 @@
   function renderHome() {
     loadProducts().then(function (products) {
       var feat = $("#featured-grid");
-      if (feat) feat.innerHTML = products.slice(0, 6).map(cardHTML).join("");
+      if (feat) {
+        var seen = {};
+        var spread = products.filter(function (p) {
+          if (seen[p.category]) return false;
+          seen[p.category] = true;
+          return true;
+        });
+        feat.innerHTML = spread.slice(0, 6).map(cardHTML).join("");
+      }
       var counts = {};
       products.forEach(function (p) { counts[p.category] = (counts[p.category] || 0) + 1; });
       var tiles = $("#cat-tiles");
@@ -253,18 +262,52 @@
         a.href = cat === "All" ? "shop.html" : "shop.html?category=" + encodeURIComponent(cat);
       });
       var list = activeCat === "All" ? products : products.filter(function (p) { return p.category === activeCat; });
-      var sort = $("#sort");
-      function apply() {
-        var arr = list.slice();
-        var v = sort ? sort.value : "featured";
-        if (v === "low") arr.sort(function (a, b) { return (a.price || Infinity) - (b.price || Infinity); });
-        else if (v === "high") arr.sort(function (a, b) { return (b.price || 0) - (a.price || 0); });
-        grid.innerHTML = arr.length ? arr.map(cardHTML).join("") : '<div class="cart-empty">No pieces in this category yet.</div>';
-        var res = $("#shop-res"); if (res) res.textContent = arr.length + " handmade item" + (arr.length === 1 ? "" : "s");
-        var title = $("#shop-title"); if (title) title.textContent = activeCat === "All" ? "All pieces" : activeCat;
+      var PAGE = 36;
+      var shown = 0;
+      var more = $("#shop-more");
+
+      function showNext() {
+        var next = list.slice(shown, shown + PAGE);
+        grid.insertAdjacentHTML("beforeend", next.map(cardHTML).join(""));
+        shown += next.length;
+        if (more) {
+          more.hidden = shown >= list.length;
+          more.textContent = "Show more (" + (list.length - shown) + " left)";
+        }
       }
-      if (sort) sort.addEventListener("change", apply);
-      apply();
+
+      grid.innerHTML = list.length ? "" : '<div class="cart-empty">No pieces in this category yet.</div>';
+      showNext();
+      if (more) more.addEventListener("click", showNext);
+      var res = $("#shop-res"); if (res) res.textContent = list.length + " handmade item" + (list.length === 1 ? "" : "s");
+      var title = $("#shop-title"); if (title) title.textContent = activeCat === "All" ? "All pieces" : activeCat;
+    });
+  }
+
+  function photosOf(p) {
+    var list = (p.images || []).filter(Boolean);
+    if (!list.length && p.image) list = [p.image];
+    return list;
+  }
+
+  function galleryHTML(p) {
+    var list = photosOf(p);
+    if (list.length < 2) return '<div class="main">' + media(p, true) + "</div>";
+    return '<div class="main" id="d-main"><img class="photo" src="' + esc(list[0]) + '" alt="' + esc(p.name) + '"></div>' +
+      '<div class="thumbs" id="d-thumbs">' + list.map(function (src, i) {
+        return '<button class="t' + (i ? "" : " active") + '" data-photo="' + esc(src) + '" aria-label="View photo ' + (i + 1) + '">' +
+          '<img class="photo" loading="lazy" src="' + esc(src) + '" alt=""></button>';
+      }).join("") + "</div>";
+  }
+
+  function wireGallery() {
+    var thumbs = $("#d-thumbs"), main = $("#d-main");
+    if (!thumbs || !main) return;
+    thumbs.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-photo]");
+      if (!btn) return;
+      main.querySelector("img").src = btn.getAttribute("data-photo");
+      $all(".t", thumbs).forEach(function (t) { t.classList.toggle("active", t === btn); });
     });
   }
 
@@ -277,7 +320,7 @@
       if (!p) { root.innerHTML = '<div class="cart-empty" style="padding:100px 0"><span class="em">\uD83E\uDDF6</span>Product not found. <a href="shop.html" style="color:var(--mint)">Back to shop</a></div>'; return; }
       document.title = p.name + " — CrochetNest";
       var pUrl = SITE + "/product.html?id=" + encodeURIComponent(p.id);
-      var pImg = p.image || (SITE + "/assets/logo.png");
+      var pImg = photosOf(p)[0] || (SITE + "/assets/logo.png");
       var desc = (p.description || ("Handmade " + p.category + " from CrochetNest.")).slice(0, 300);
       setMeta('meta[name="description"]', "content", desc);
       setCanonical(pUrl);
@@ -303,7 +346,7 @@
       root.innerHTML =
         '<div class="crumbs"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / ' + esc(p.category) + " / " + esc(p.name) + "</div>" +
         '<div class="detail">' +
-          '<div class="d-gallery"><div class="main">' + media(p, true) + "</div></div>" +
+          '<div class="d-gallery">' + galleryHTML(p) + "</div>" +
           '<div class="d-info">' +
             '<div class="cat">' + esc(p.category) + "</div>" +
             "<h1>" + esc(p.name) + "</h1>" +
@@ -324,6 +367,7 @@
         '<section class="section"><div class="sec-head"><div><div class="kick">You may also like</div><h2>More pieces</h2></div></div>' +
         '<div class="grid">' + others.map(cardHTML).join("") + "</div></section>";
 
+      wireGallery();
       var qty = 1;
       var qv = $("#q-val");
       $("#q-dec").addEventListener("click", function () { qty = Math.max(1, qty - 1); qv.textContent = qty; });
@@ -452,6 +496,33 @@
     renderPreview();
   }
 
+  /* ---------- mobile menu ---------- */
+  function buildMobileMenu() {
+    var nav = $(".nav"), actions = $(".header-actions");
+    if (!nav || !actions || $("#menu-toggle")) return;
+
+    var toggle = document.createElement("button");
+    toggle.id = "menu-toggle";
+    toggle.className = "icon-btn menu-toggle";
+    toggle.setAttribute("aria-label", "Menu");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.innerHTML = "\u2261";
+    actions.appendChild(toggle);
+
+    var sheet = document.createElement("nav");
+    sheet.id = "mobile-menu";
+    sheet.className = "mobile-menu";
+    sheet.innerHTML = nav.innerHTML;
+    document.querySelector(".header").appendChild(sheet);
+
+    toggle.addEventListener("click", function () {
+      var open = sheet.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.innerHTML = open ? "\u2715" : "\u2261";
+    });
+    sheet.addEventListener("click", function () { sheet.classList.remove("open"); toggle.innerHTML = "\u2261"; });
+  }
+
   /* ---------- global event wiring ---------- */
   function wire() {
     document.addEventListener("click", function (e) {
@@ -473,6 +544,7 @@
   /* ---------- boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     wire();
+    buildMobileMenu();
     updateBadge();
     renderDrawer();
     var page = document.body.getAttribute("data-page");
