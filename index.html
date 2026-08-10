@@ -45,6 +45,7 @@
       <a href="index.html" class="active">Home</a>
       <a href="shop.html">Shop</a>
       <a href="shop.html">Categories</a>
+      <a href="customise.html">Customise</a>
       <a href="#story">Our Story</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -55,28 +56,24 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="glow"></div>
-  <div class="container">
-    <div class="hero-copy">
-      <span class="pill-tag"><span class="dot"></span> Handmade · Made to order</span>
-      <h1>Crafted <span class="mint">loop</span><br>by <span class="out">loop.</span></h1>
-      <p>A boutique nest of hand-crocheted pieces — amigurumi, wearables and home accents. Browse freely, no account needed, then send an enquiry to book.</p>
+<section class="journal-hero">
+  <div class="container journal-grid">
+    <div class="journal-copy">
+      <span class="paper-label">from our hands to your home</span>
+      <h1>A little joy,<br><em>stitched by hand.</em></h1>
+      <p>Playful keepsakes, forever flowers and thoughtful gifts — made slowly, one loop and one joyful idea at a time.</p>
       <div class="hero-cta">
         <a href="shop.html" class="btn btn-mint btn-lg">Explore the collection</a>
-        <a href="#story" class="btn btn-lg">How it works</a>
+        <a href="customise.html" class="btn btn-lg">Request something custom</a>
       </div>
-      <div class="hero-meta">
-        <div class="m"><div class="n">80+</div><div class="l">Pieces made</div></div>
-        <div class="m"><div class="n">100%</div><div class="l">Hand-crocheted</div></div>
-        <div class="m"><div class="n">5.0</div><div class="l">Maker rating</div></div>
-      </div>
+      <div class="thread-note">No checkout. Pick what you love, then enquire to make it yours.</div>
     </div>
-    <div class="hero-visual">
-      <div class="ring"></div>
-      <img src="assets/logo.png" alt="CrochetNest">
-      <div class="float f1">Made to order · <b>ships ~7 days</b></div>
-      <div class="float f2"><span class="sw"></span> 100% cotton yarn</div>
+    <div class="scrapbook" aria-label="A selection of CrochetNest handmade pieces">
+      <figure class="paper-photo photo-main"><img src="assets/products/lily-bouquet.webp" alt="Pastel crochet lily bouquet"><figcaption>forever flowers</figcaption></figure>
+      <figure class="paper-photo photo-small"><img src="assets/products/zari-red-rakhi.webp" alt="Handmade crochet rakhi"><figcaption>made for your person</figcaption></figure>
+      <figure class="paper-photo photo-round"><img src="assets/products/round-sky-purse.webp" alt="Round crochet purse"></figure>
+      <span class="paper-tape"></span>
+      <span class="stitched-heart">♡</span>
     </div>
   </div>
 </section>
@@ -84,7 +81,7 @@
 <section class="section">
   <div class="container">
     <div class="sec-head">
-      <div><div class="kick">Browse</div><h2>Shop by category</h2></div>
+      <div><div class="kick">The craft journal</div><h2>What are we making today?</h2></div>
       <a href="shop.html" class="see">View all →</a>
     </div>
     <div class="cat-strip" id="cat-tiles"><div class="spinner"></div></div>
@@ -94,7 +91,7 @@
 <section class="section" style="padding-top:0">
   <div class="container">
     <div class="sec-head">
-      <div><div class="kick">Featured</div><h2>Fresh off the hook</h2></div>
+      <div><div class="kick">Selected pieces</div><h2>Fresh from the studio</h2></div>
       <a href="shop.html" class="see">All pieces →</a>
     </div>
     <div class="grid" id="featured-grid"><div class="spinner"></div></div>
@@ -103,11 +100,9 @@
 
 <section class="section" id="story" style="padding-top:0">
   <div class="container">
-    <div class="sec-head"><div><div class="kick">How it works</div><h2>From our hooks to your home</h2></div></div>
-    <div class="cat-strip" style="grid-template-columns:repeat(3,1fr)">
-      <div class="stat"><div class="n">1</div><div class="l" style="margin-top:8px;font-size:15px;color:var(--ink)">Browse &amp; add to cart</div><div style="color:var(--muted);font-size:13.5px;margin-top:6px">No account, no checkout — just pick the pieces you love.</div></div>
-      <div class="stat"><div class="n">2</div><div class="l" style="margin-top:8px;font-size:15px;color:var(--ink)">Send an enquiry</div><div style="color:var(--muted);font-size:13.5px;margin-top:6px">Tap WhatsApp or Instagram to share your cart with us.</div></div>
-      <div class="stat"><div class="n">3</div><div class="l" style="margin-top:8px;font-size:15px;color:var(--ink)">We make it by hand</div><div style="color:var(--muted);font-size:13.5px;margin-top:6px">We confirm details &amp; timing, then crochet it just for you.</div></div>
+    <div class="made-story">
+      <div class="made-copy"><div class="kick">Made by hand</div><h2>Every piece begins with a thread.</h2><p>Browse the journal or share a reference of your own. After we confirm colours, size and timing, your piece is crocheted by hand — never pulled from a factory shelf.</p><a href="customise.html" class="see">Start a custom request →</a></div>
+      <div class="process-stitches"><div><b>01</b><span>Choose a piece</span></div><div><b>02</b><span>Send an enquiry</span></div><div><b>03</b><span>Made just for you</span></div></div>
     </div>
   </div>
 </section>
@@ -119,8 +114,8 @@
         <a class="brand" href="index.html"><img src="assets/logo.png" alt="CrochetNest" style="width:40px;height:40px"></a>
         <p class="blurb">Hand-crocheted, made-to-order pieces from a tiny studio. Every stitch by hand, every piece one of a kind.</p>
       </div>
-      <div class="col"><h4>Shop</h4><a href="shop.html?category=Amigurumi">Amigurumi</a><a href="shop.html?category=Wearables">Wearables</a><a href="shop.html?category=Home Decor">Home Decor</a><a href="shop.html?category=Accessories">Accessories</a></div>
-      <div class="col"><h4>Company</h4><a href="#story">Our Story</a><a href="#story">How it works</a><a href="admin.html">Admin</a></div>
+      <div class="col"><h4>Shop</h4><a href="shop.html?category=Rakhi">Rakhi</a><a href="shop.html?category=Dream%20Catchers">Dream Catchers</a><a href="shop.html?category=Purses">Purses</a><a href="shop.html?category=Bouquets">Bouquets</a></div>
+      <div class="col"><h4>Company</h4><a href="#story">Our Story</a><a href="customise.html">Customise</a><a href="admin.html">Admin</a></div>
       <div class="col"><h4>Enquire</h4><a href="#" data-wa>WhatsApp</a><a href="#" data-ig>Instagram</a><a href="mailto:kanodiaanshul26@gmail.com">Email</a></div>
     </div>
     <div class="bar"><div>© 2026 CrochetNest</div><div>Handmade with ♥</div></div>
@@ -136,7 +131,7 @@
   </div>
   <div class="dbody" id="cart-items"></div>
   <div class="dfoot">
-    <div class="drow"><span class="l">Estimated total</span><span class="v" id="cart-total">₹0</span></div>
+    <div class="drow"><span class="l">Pricing</span><span class="v" id="cart-total">Confirmed on enquiry</span></div>
     <div class="enq-note">This is an <b>enquiry-only</b> cart. Send your list to confirm availability, custom options &amp; payment. Saved on this device only — it clears if you clear your browser.</div>
     <div class="enq">
       <button class="wa" data-wa>Send enquiry on WhatsApp →</button>

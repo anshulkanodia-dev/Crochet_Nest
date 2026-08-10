@@ -10,6 +10,9 @@
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $all(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
   function money(n) { return (CFG.currencySymbol || "\u20b9") + Number(n).toLocaleString("en-IN"); }
+  function hasPrice(p) { return Number(p && p.price) > 0; }
+  function priceLabel(p) { return hasPrice(p) ? money(p.price) : "Price on enquiry"; }
+  function makeLabel(p) { return Number(p && p.shipDays) > 0 ? "Ships ~" + p.shipDays + " days" : "Made to order"; }
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
@@ -119,12 +122,14 @@
 
   function enquiryText() {
     var rows = cartDetailed();
-    var lines = ["Hi CrochetNest! I'd like to enquire about booking these pieces:", ""];
+    var lines = ["Hi CrochetNest! I'd like to enquire about these handmade pieces:", ""];
     rows.forEach(function (r, idx) {
-      lines.push((idx + 1) + ". " + r.p.name + " (" + r.p.category + ") x" + r.qty + " — " + money(r.line));
+      lines.push((idx + 1) + ". " + r.p.name + " (" + r.p.category + ") x" + r.qty + (hasPrice(r.p) ? " — " + money(r.line) : ""));
     });
-    lines.push("");
-    lines.push("Estimated total: " + money(cartTotal()));
+    if (rows.some(function (r) { return hasPrice(r.p); })) {
+      lines.push("");
+      lines.push("Estimated total for priced items: " + money(cartTotal()));
+    }
     lines.push("Please let me know availability and next steps. Thank you!");
     return lines.join("\n");
   }
@@ -132,6 +137,7 @@
   function enquireWhatsApp() {
     if (!getCart().length) { toast("Your cart is empty"); return; }
     var num = (SETTINGS.whatsappNumber || "").replace(/\D/g, "");
+    if (!num) { toast("WhatsApp is being set up — please use Instagram for now"); return; }
     var url = "https://wa.me/" + num + "?text=" + encodeURIComponent(enquiryText());
     window.open(url, "_blank");
   }
@@ -173,15 +179,15 @@
           '<div class="im">' + media(r.p) + "</div>" +
           '<div class="info">' +
             '<div class="t">' + esc(r.p.name) + "</div>" +
-            '<div class="c">' + esc(r.p.category) + " \u00b7 Ships ~" + esc(r.p.shipDays) + " days</div>" +
-            '<div class="p">' + money(r.p.price) + "</div>" +
+            '<div class="c">' + esc(r.p.category) + " · " + esc(makeLabel(r.p)) + "</div>" +
+            '<div class="p">' + esc(priceLabel(r.p)) + "</div>" +
             '<div class="mstep"><button data-dec="' + esc(r.p.id) + '">\u2212</button><span>' + r.qty + '</span><button data-inc="' + esc(r.p.id) + '">+</button></div>' +
           "</div>" +
           '<div class="rm" data-rm="' + esc(r.p.id) + '">\u2715</div>' +
         "</div>";
       }).join("");
     }
-    var tot = $("#cart-total"); if (tot) tot.textContent = money(cartTotal());
+    var tot = $("#cart-total"); if (tot) tot.textContent = rows.length && rows.every(function (r) { return hasPrice(r.p); }) ? money(cartTotal()) : "Confirmed on enquiry";
   }
 
   /* ---------- renders ---------- */
@@ -196,7 +202,7 @@
       '<div class="body">' +
         '<div class="cat">' + esc(p.category) + "</div>" +
         "<h3>" + esc(p.name) + "</h3>" +
-        '<div class="foot"><span class="price">' + money(p.price) + '</span><span class="ship">Ships ~' + esc(p.shipDays) + " days</span></div>" +
+        '<div class="foot"><span class="price">' + esc(priceLabel(p)) + '</span><span class="ship">' + esc(makeLabel(p)) + "</span></div>" +
       "</div>" +
     "</a>";
   }
@@ -204,16 +210,17 @@
   function renderHome() {
     loadProducts().then(function (products) {
       var feat = $("#featured-grid");
-      if (feat) feat.innerHTML = products.slice(0, 3).map(cardHTML).join("");
+      if (feat) feat.innerHTML = products.slice(0, 6).map(cardHTML).join("");
       var counts = {};
       products.forEach(function (p) { counts[p.category] = (counts[p.category] || 0) + 1; });
       var tiles = $("#cat-tiles");
       if (tiles) {
         var cats = SETTINGS.categories || [];
-        tiles.style.gridTemplateColumns = "repeat(" + Math.min(Math.max(cats.length, 1), 5) + ", 1fr)";
-        tiles.innerHTML = cats.map(function (c, i) {
+        tiles.style.gridTemplateColumns = "repeat(4, minmax(0, 1fr))";
+        tiles.innerHTML = cats.map(function (c) {
+          var sample = products.filter(function (p) { return p.category === c; })[0];
           return '<a class="cat-tile" href="shop.html?category=' + encodeURIComponent(c) + '">' +
-            '<div class="ph ' + SWATCHES[i % SWATCHES.length] + '"><div class="knot"></div></div>' +
+            '<div class="cat-photo">' + (sample ? media(sample) : "") + "</div>" +
             '<span class="cnum">' + (counts[c] || 0) + "</span>" +
             '<div class="ct-cap"><h4>' + esc(c) + "</h4></div>" +
           "</a>";
@@ -250,8 +257,8 @@
       function apply() {
         var arr = list.slice();
         var v = sort ? sort.value : "featured";
-        if (v === "low") arr.sort(function (a, b) { return a.price - b.price; });
-        else if (v === "high") arr.sort(function (a, b) { return b.price - a.price; });
+        if (v === "low") arr.sort(function (a, b) { return (a.price || Infinity) - (b.price || Infinity); });
+        else if (v === "high") arr.sort(function (a, b) { return (b.price || 0) - (a.price || 0); });
         grid.innerHTML = arr.length ? arr.map(cardHTML).join("") : '<div class="cart-empty">No pieces in this category yet.</div>';
         var res = $("#shop-res"); if (res) res.textContent = arr.length + " handmade item" + (arr.length === 1 ? "" : "s");
         var title = $("#shop-title"); if (title) title.textContent = activeCat === "All" ? "All pieces" : activeCat;
@@ -281,22 +288,17 @@
       setMeta('meta[name="twitter:title"]', "content", p.name + " — CrochetNest");
       setMeta('meta[name="twitter:description"]', "content", desc);
       setMeta('meta[name="twitter:image"]', "content", pImg);
-      injectJsonLd({
+      var schema = {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": p.name,
         "description": desc,
         "category": p.category,
         "image": pImg,
-        "brand": { "@type": "Brand", "name": "CrochetNest" },
-        "offers": {
-          "@type": "Offer",
-          "price": String(p.price),
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/MadeToOrder",
-          "url": pUrl
-        }
-      });
+        "brand": { "@type": "Brand", "name": "CrochetNest" }
+      };
+      if (hasPrice(p)) schema.offers = { "@type": "Offer", "price": String(p.price), "priceCurrency": "INR", "availability": "https://schema.org/MadeToOrder", "url": pUrl };
+      injectJsonLd(schema);
       var others = products.filter(function (x) { return x.id !== id; }).slice(0, 3);
       root.innerHTML =
         '<div class="crumbs"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / ' + esc(p.category) + " / " + esc(p.name) + "</div>" +
@@ -305,10 +307,10 @@
           '<div class="d-info">' +
             '<div class="cat">' + esc(p.category) + "</div>" +
             "<h1>" + esc(p.name) + "</h1>" +
-            '<div class="price">' + money(p.price) + "</div>" +
+            '<div class="price">' + esc(priceLabel(p)) + "</div>" +
             '<p class="desc">' + esc(p.description) + "</p>" +
             '<div class="spec">' +
-              '<div class="row"><span class="k">Estimated shipping</span><span class="v">Ships in ~' + esc(p.shipDays) + " days</span></div>" +
+              '<div class="row"><span class="k">Availability</span><span class="v">' + esc(makeLabel(p)) + "</span></div>" +
               (p.material ? '<div class="row"><span class="k">Material</span><span class="v">' + esc(p.material) + "</span></div>" : "") +
               (p.size ? '<div class="row"><span class="k">Size</span><span class="v">' + esc(p.size) + "</span></div>" : "") +
             "</div>" +
@@ -328,6 +330,126 @@
       $("#q-inc").addEventListener("click", function () { qty += 1; qv.textContent = qty; });
       $("#pd-add").addEventListener("click", function () { addToCart(p.id, qty); toast("Added to cart", true); openDrawer(); });
     });
+  }
+
+  /* ---------- customise (custom request) page ---------- */
+  function renderCustomise() {
+    var MAX = 5;
+    var files = [];
+    var dz = $("#dropzone"), input = $("#file-input"), thumbs = $("#thumbs"), preview = $("#msg-preview");
+    if (!dz) return;
+
+    function addFiles(list) {
+      var arr = Array.prototype.slice.call(list || []);
+      arr.forEach(function (f) {
+        if (!/^image\//.test(f.type)) { toast("“" + f.name + "” isn’t an image"); return; }
+        if (files.length >= MAX) { toast("You can add up to " + MAX + " photos"); return; }
+        files.push({ file: f, url: URL.createObjectURL(f) });
+      });
+      renderThumbs();
+    }
+    function removeFile(i) {
+      URL.revokeObjectURL(files[i].url);
+      files.splice(i, 1);
+      renderThumbs();
+    }
+    function renderThumbs() {
+      thumbs.innerHTML = files.map(function (f, i) {
+        return '<div class="th"><img src="' + f.url + '" alt="' + esc(f.file.name) + '">' +
+          '<button data-rm="' + i + '" title="Remove">\u2715</button>' +
+          '<span class="nm">' + esc(f.file.name) + "</span></div>";
+      }).join("");
+      renderPreview();
+    }
+
+    function requestText() {
+      var msg = $("#c-msg").value.trim() || "Is it possible to make this?";
+      var lines = ["Hi CrochetNest! I have a custom request:", "", msg, ""];
+      var name = $("#c-name").value.trim();
+      var size = $("#c-size").value.trim();
+      var colour = $("#c-colour").value.trim();
+      var by = $("#c-date").value;
+      if (name) lines.push("Name: " + name);
+      if (size) lines.push("Size: " + size);
+      if (colour) lines.push("Colours: " + colour);
+      if (by) lines.push("Needed by: " + by);
+      if (name || size || colour || by) lines.push("");
+      lines.push(files.length
+        ? "(Attaching " + files.length + " reference photo" + (files.length > 1 ? "s" : "") + ".)"
+        : "(I'll share a reference photo next.)");
+      return lines.join("\n");
+    }
+    function renderPreview() { preview.textContent = requestText(); }
+
+    function copyFirstImage() {
+      if (!files.length) return Promise.resolve(false);
+      if (!(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write)) return Promise.resolve(false);
+      return new Promise(function (resolve) {
+        var img = new Image();
+        img.onload = function () {
+          var c = document.createElement("canvas");
+          c.width = img.naturalWidth; c.height = img.naturalHeight;
+          c.getContext("2d").drawImage(img, 0, 0);
+          c.toBlob(function (blob) {
+            if (!blob) { resolve(false); return; }
+            navigator.clipboard.write([new window.ClipboardItem({ "image/png": blob })])
+              .then(function () { resolve(true); })
+              .catch(function () { resolve(false); });
+          }, "image/png");
+        };
+        img.onerror = function () { resolve(false); };
+        img.src = files[0].url;
+      });
+    }
+
+    function downloadPhotos() {
+      if (!files.length) { toast("Add a photo first"); return; }
+      files.forEach(function (f, i) {
+        var a = document.createElement("a");
+        a.href = f.url;
+        a.download = f.file.name || ("crochetnest-reference-" + (i + 1));
+        a.click();
+      });
+      toast("Photos downloaded — attach them in the chat", true);
+    }
+
+    // events
+    dz.addEventListener("click", function () { input.click(); });
+    dz.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); input.click(); } });
+    input.addEventListener("change", function () { addFiles(input.files); input.value = ""; });
+    ["dragenter", "dragover"].forEach(function (ev) {
+      dz.addEventListener(ev, function (e) { e.preventDefault(); dz.classList.add("over"); });
+    });
+    ["dragleave", "drop"].forEach(function (ev) {
+      dz.addEventListener(ev, function (e) { e.preventDefault(); dz.classList.remove("over"); });
+    });
+    dz.addEventListener("drop", function (e) { addFiles(e.dataTransfer && e.dataTransfer.files); });
+    thumbs.addEventListener("click", function (e) {
+      var rm = e.target.getAttribute && e.target.getAttribute("data-rm");
+      if (rm !== null && rm !== undefined) removeFile(Number(rm));
+    });
+    ["c-msg", "c-name", "c-size", "c-colour", "c-date"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener("input", renderPreview);
+    });
+
+    $("#c-wa").addEventListener("click", function () {
+      var num = (SETTINGS.whatsappNumber || "").replace(/\D/g, "");
+      if (!num) { toast("WhatsApp is being set up — please use Instagram for now"); return; }
+      window.open("https://wa.me/" + num + "?text=" + encodeURIComponent(requestText()), "_blank");
+      copyFirstImage().then(function (ok) {
+        toast(ok ? "Photo copied — paste it in the chat" : (files.length ? "Attach your photo in the chat" : "Request opened in WhatsApp"), true);
+      });
+    });
+    $("#c-ig").addEventListener("click", function () {
+      window.open("https://instagram.com/" + encodeURIComponent(SETTINGS.instagramHandle || ""), "_blank");
+      copyText(requestText());
+      toast("Message copied — paste it in our DM with your photo", true);
+    });
+    $("#c-copy").addEventListener("click", function () { copyText(requestText()); toast("Message copied", true); });
+    $("#c-download").addEventListener("click", downloadPhotos);
+
+    renderPreview();
   }
 
   /* ---------- global event wiring ---------- */
@@ -358,6 +480,7 @@
       if (page === "home") renderHome();
       else if (page === "shop") renderShop();
       else if (page === "product") renderProduct();
+      else if (page === "customise") renderCustomise();
     });
   });
 
