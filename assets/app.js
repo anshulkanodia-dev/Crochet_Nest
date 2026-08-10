@@ -10,6 +10,9 @@
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $all(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
   function money(n) { return (CFG.currencySymbol || "\u20b9") + Number(n).toLocaleString("en-IN"); }
+  function hasPrice(p) { return Number(p && p.price) > 0; }
+  function priceLabel(p) { return hasPrice(p) ? money(p.price) : "Price on enquiry"; }
+  function makeLabel(p) { return Number(p && p.shipDays) > 0 ? "Ships ~" + p.shipDays + " days" : "Made to order"; }
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
@@ -119,12 +122,14 @@
 
   function enquiryText() {
     var rows = cartDetailed();
-    var lines = ["Hi CrochetNest! I'd like to enquire about booking these pieces:", ""];
+    var lines = ["Hi CrochetNest! I'd like to enquire about these handmade pieces:", ""];
     rows.forEach(function (r, idx) {
-      lines.push((idx + 1) + ". " + r.p.name + " (" + r.p.category + ") x" + r.qty + " — " + money(r.line));
+      lines.push((idx + 1) + ". " + r.p.name + " (" + r.p.category + ") x" + r.qty + (hasPrice(r.p) ? " — " + money(r.line) : ""));
     });
-    lines.push("");
-    lines.push("Estimated total: " + money(cartTotal()));
+    if (rows.some(function (r) { return hasPrice(r.p); })) {
+      lines.push("");
+      lines.push("Estimated total for priced items: " + money(cartTotal()));
+    }
     lines.push("Please let me know availability and next steps. Thank you!");
     return lines.join("\n");
   }
@@ -132,6 +137,7 @@
   function enquireWhatsApp() {
     if (!getCart().length) { toast("Your cart is empty"); return; }
     var num = (SETTINGS.whatsappNumber || "").replace(/\D/g, "");
+    if (!num) { toast("WhatsApp is being set up — please use Instagram for now"); return; }
     var url = "https://wa.me/" + num + "?text=" + encodeURIComponent(enquiryText());
     window.open(url, "_blank");
   }
@@ -173,15 +179,15 @@
           '<div class="im">' + media(r.p) + "</div>" +
           '<div class="info">' +
             '<div class="t">' + esc(r.p.name) + "</div>" +
-            '<div class="c">' + esc(r.p.category) + " \u00b7 Ships ~" + esc(r.p.shipDays) + " days</div>" +
-            '<div class="p">' + money(r.p.price) + "</div>" +
+            '<div class="c">' + esc(r.p.category) + " · " + esc(makeLabel(r.p)) + "</div>" +
+            '<div class="p">' + esc(priceLabel(r.p)) + "</div>" +
             '<div class="mstep"><button data-dec="' + esc(r.p.id) + '">\u2212</button><span>' + r.qty + '</span><button data-inc="' + esc(r.p.id) + '">+</button></div>' +
           "</div>" +
           '<div class="rm" data-rm="' + esc(r.p.id) + '">\u2715</div>' +
         "</div>";
       }).join("");
     }
-    var tot = $("#cart-total"); if (tot) tot.textContent = money(cartTotal());
+    var tot = $("#cart-total"); if (tot) tot.textContent = rows.length && rows.every(function (r) { return hasPrice(r.p); }) ? money(cartTotal()) : "Confirmed on enquiry";
   }
 
   /* ---------- renders ---------- */
@@ -196,7 +202,7 @@
       '<div class="body">' +
         '<div class="cat">' + esc(p.category) + "</div>" +
         "<h3>" + esc(p.name) + "</h3>" +
-        '<div class="foot"><span class="price">' + money(p.price) + '</span><span class="ship">Ships ~' + esc(p.shipDays) + " days</span></div>" +
+        '<div class="foot"><span class="price">' + esc(priceLabel(p)) + '</span><span class="ship">' + esc(makeLabel(p)) + "</span></div>" +
       "</div>" +
     "</a>";
   }
@@ -204,16 +210,17 @@
   function renderHome() {
     loadProducts().then(function (products) {
       var feat = $("#featured-grid");
-      if (feat) feat.innerHTML = products.slice(0, 3).map(cardHTML).join("");
+      if (feat) feat.innerHTML = products.slice(0, 6).map(cardHTML).join("");
       var counts = {};
       products.forEach(function (p) { counts[p.category] = (counts[p.category] || 0) + 1; });
       var tiles = $("#cat-tiles");
       if (tiles) {
         var cats = SETTINGS.categories || [];
-        tiles.style.gridTemplateColumns = "repeat(" + Math.min(Math.max(cats.length, 1), 5) + ", 1fr)";
-        tiles.innerHTML = cats.map(function (c, i) {
+        tiles.style.gridTemplateColumns = "repeat(4, minmax(0, 1fr))";
+        tiles.innerHTML = cats.map(function (c) {
+          var sample = products.filter(function (p) { return p.category === c; })[0];
           return '<a class="cat-tile" href="shop.html?category=' + encodeURIComponent(c) + '">' +
-            '<div class="ph ' + SWATCHES[i % SWATCHES.length] + '"><div class="knot"></div></div>' +
+            '<div class="cat-photo">' + (sample ? media(sample) : "") + "</div>" +
             '<span class="cnum">' + (counts[c] || 0) + "</span>" +
             '<div class="ct-cap"><h4>' + esc(c) + "</h4></div>" +
           "</a>";
@@ -250,8 +257,8 @@
       function apply() {
         var arr = list.slice();
         var v = sort ? sort.value : "featured";
-        if (v === "low") arr.sort(function (a, b) { return a.price - b.price; });
-        else if (v === "high") arr.sort(function (a, b) { return b.price - a.price; });
+        if (v === "low") arr.sort(function (a, b) { return (a.price || Infinity) - (b.price || Infinity); });
+        else if (v === "high") arr.sort(function (a, b) { return (b.price || 0) - (a.price || 0); });
         grid.innerHTML = arr.length ? arr.map(cardHTML).join("") : '<div class="cart-empty">No pieces in this category yet.</div>';
         var res = $("#shop-res"); if (res) res.textContent = arr.length + " handmade item" + (arr.length === 1 ? "" : "s");
         var title = $("#shop-title"); if (title) title.textContent = activeCat === "All" ? "All pieces" : activeCat;
@@ -281,22 +288,17 @@
       setMeta('meta[name="twitter:title"]', "content", p.name + " — CrochetNest");
       setMeta('meta[name="twitter:description"]', "content", desc);
       setMeta('meta[name="twitter:image"]', "content", pImg);
-      injectJsonLd({
+      var schema = {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": p.name,
         "description": desc,
         "category": p.category,
         "image": pImg,
-        "brand": { "@type": "Brand", "name": "CrochetNest" },
-        "offers": {
-          "@type": "Offer",
-          "price": String(p.price),
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/MadeToOrder",
-          "url": pUrl
-        }
-      });
+        "brand": { "@type": "Brand", "name": "CrochetNest" }
+      };
+      if (hasPrice(p)) schema.offers = { "@type": "Offer", "price": String(p.price), "priceCurrency": "INR", "availability": "https://schema.org/MadeToOrder", "url": pUrl };
+      injectJsonLd(schema);
       var others = products.filter(function (x) { return x.id !== id; }).slice(0, 3);
       root.innerHTML =
         '<div class="crumbs"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / ' + esc(p.category) + " / " + esc(p.name) + "</div>" +
@@ -305,10 +307,10 @@
           '<div class="d-info">' +
             '<div class="cat">' + esc(p.category) + "</div>" +
             "<h1>" + esc(p.name) + "</h1>" +
-            '<div class="price">' + money(p.price) + "</div>" +
+            '<div class="price">' + esc(priceLabel(p)) + "</div>" +
             '<p class="desc">' + esc(p.description) + "</p>" +
             '<div class="spec">' +
-              '<div class="row"><span class="k">Estimated shipping</span><span class="v">Ships in ~' + esc(p.shipDays) + " days</span></div>" +
+              '<div class="row"><span class="k">Availability</span><span class="v">' + esc(makeLabel(p)) + "</span></div>" +
               (p.material ? '<div class="row"><span class="k">Material</span><span class="v">' + esc(p.material) + "</span></div>" : "") +
               (p.size ? '<div class="row"><span class="k">Size</span><span class="v">' + esc(p.size) + "</span></div>" : "") +
             "</div>" +
@@ -433,6 +435,7 @@
 
     $("#c-wa").addEventListener("click", function () {
       var num = (SETTINGS.whatsappNumber || "").replace(/\D/g, "");
+      if (!num) { toast("WhatsApp is being set up — please use Instagram for now"); return; }
       window.open("https://wa.me/" + num + "?text=" + encodeURIComponent(requestText()), "_blank");
       copyFirstImage().then(function (ok) {
         toast(ok ? "Photo copied — paste it in the chat" : (files.length ? "Attach your photo in the chat" : "Request opened in WhatsApp"), true);

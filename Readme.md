@@ -12,6 +12,8 @@ Built to be hosted entirely on **GitHub Pages** — no server required.
   **add / edit / delete** products, **set the WhatsApp / Instagram contacts**, and
   **add / delete categories**; changes are published back to `data/products.json` and
   `data/settings.json`.
+- **Real catalogue** — 38 products use lightly cropped and web-optimized photographs from
+  the supplied CrochetNest gallery screenshots; pricing and timelines are confirmed by enquiry.
 
 ## Project structure
 
@@ -28,6 +30,7 @@ assets/
   admin.js            Admin: OTP login + product CRUD + GitHub publish
   config.js           Site configuration (safe to commit — NO secrets)
   logo.png            CrochetNest logo
+  products/            Optimized real product photographs
 data/
   products.json       Product catalogue (the site's data source)
   settings.json       Admin-managed contacts + category list
@@ -91,8 +94,8 @@ branch and `/ (root)`. The site is served at `https://<user>.github.io/<repo>/`.
 ## SEO
 
 - Per-page `<title>` + meta description, Open Graph + Twitter Card tags, and canonical URLs.
-- JSON-LD structured data: `Organization` on the home page and `Product` (with price/currency)
-  injected on each product page.
+- JSON-LD structured data: `Organization` on the home page and `Product` on each product
+  page; an `Offer` is included only when a real product price has been supplied.
 - `robots.txt` (admin pages disallowed) and `sitemap.xml`.
 
 The canonical / Open Graph URLs use `https://anshulkanodia-dev.github.io/Crochet_Nest`.

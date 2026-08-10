@@ -1,21 +1,21 @@
 /*
  * CrochetNest site configuration.
- * Edit the placeholder values below with your real details.
+ * Public fallback values only; admin-managed values live in data/settings.json.
  * This file is safe to commit — it must NOT contain any secret tokens.
  */
 window.CN_CONFIG = {
   // Contact / enquiry channels + categories are managed by the ADMIN at runtime
   // and stored in data/settings.json. The values below are only fallback defaults
   // used if settings.json is missing.
-  whatsappNumber: "911234567890", // country code + number, digits only (fallback)
-  instagramHandle: "crochetnest", // without the @ (fallback)
+  whatsappNumber: "", // set in Admin Settings (country code + number, digits only)
+  instagramHandle: "crochetnest1201", // without the @ (fallback)
   contactEmail: "kanodiaanshul26@gmail.com",
 
   // Currency
   currencySymbol: "\u20b9", // ₹
 
   // Fallback categories (the live list lives in data/settings.json, editable in admin)
-  categories: ["Amigurumi", "Wearables", "Home Decor", "Bags", "Accessories"],
+  categories: ["Rakhi", "Dream Catchers", "Hairbands", "Hair Accessories", "Purses", "Bouquets", "Flowers & Bouquets", "Keychains", "Jewellery", "Photo Frames", "Stationery", "Home Décor"],
 
   // Admin OTP login
   admin: {
