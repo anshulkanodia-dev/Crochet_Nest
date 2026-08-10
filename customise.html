@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Crochet Requests — CrochetNest</title>
+<meta name="description" content="Send CrochetNest a custom crochet request — upload a reference photo, add your size, colour and deadline, and ask “Is it possible to make this?” via WhatsApp or Instagram.">
+<meta name="keywords" content="custom crochet, crochet commission, made to order crochet, custom amigurumi, crochet request, CrochetNest">
+<meta name="author" content="CrochetNest">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14181a">
+<link rel="canonical" href="https://anshulkanodia-dev.github.io/Crochet_Nest/customise.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CrochetNest">
+<meta property="og:title" content="Custom Crochet Requests — CrochetNest">
+<meta property="og:description" content="Upload a reference photo and ask us to make it. Custom crochet, handmade to order.">
+<meta property="og:url" content="https://anshulkanodia-dev.github.io/Crochet_Nest/customise.html">
+<meta property="og:image" content="https://anshulkanodia-dev.github.io/Crochet_Nest/assets/logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Custom Crochet Requests — CrochetNest">
+<meta name="twitter:description" content="Upload a reference photo and ask us to make it. Custom crochet, handmade to order.">
+<meta name="twitter:image" content="https://anshulkanodia-dev.github.io/Crochet_Nest/assets/logo.png">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="customise">
+
+<div class="marquee">Handmade to order · Free enquiry via WhatsApp &amp; Instagram · One-of-a-kind crochet · Made with love</div>
+
+<header class="header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="CrochetNest"></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html">Categories</a>
+      <a href="customise.html" class="active">Customise</a>
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="icon-btn" title="Search">⌕</div>
+      <div class="icon-btn" data-open-cart title="Cart">🛍<span class="badge" data-cart-badge>0</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Customise</div>
+
+  <div class="sec-head" style="margin-top:8px">
+    <div>
+      <div class="kick">Custom requests</div>
+      <h2>Got something in mind?</h2>
+      <p style="color:var(--ink-2);max-width:620px;margin-top:12px">Upload a photo of what you'd like — a picture you saw, a sketch, a colour you love — and we'll tell you if we can crochet it, how long it'll take and what it'll cost.</p>
+    </div>
+  </div>
+
+  <div class="custom-wrap">
+    <section class="panel-b" style="padding:26px">
+      <h3 style="font-size:19px;margin:0 0 4px">1 · Add your reference photos</h3>
+      <div class="sub" style="margin-bottom:18px">JPG, PNG, WebP or GIF — up to 5 photos.</div>
+
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Add photos">
+        <div class="dz-ico">🖼</div>
+        <div class="dz-t">Click to choose photos</div>
+        <div class="dz-s">or drag &amp; drop them here</div>
+      </div>
+      <input type="file" id="file-input" accept="image/*" multiple hidden>
+
+      <div class="thumbs" id="thumbs"></div>
+
+      <h3 style="font-size:19px;margin:28px 0 4px">2 · Your message</h3>
+      <div class="sub" style="margin-bottom:18px">Edit it however you like — we've filled in a starter.</div>
+
+      <div class="f2">
+        <div class="field"><label>Your name <span style="color:var(--muted)">(optional)</span></label><input id="c-name" placeholder="e.g. Anshul"></div>
+        <div class="field"><label>Size / dimensions <span style="color:var(--muted)">(optional)</span></label><input id="c-size" placeholder="e.g. approx. 25 cm tall"></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label>Colours <span style="color:var(--muted)">(optional)</span></label><input id="c-colour" placeholder="e.g. sage green &amp; cream"></div>
+        <div class="field"><label>Needed by <span style="color:var(--muted)">(optional)</span></label><input id="c-date" type="date"></div>
+      </div>
+      <div class="field mb0">
+        <label>Message</label>
+        <textarea id="c-msg" rows="4">Is it possible to make this?</textarea>
+      </div>
+    </section>
+
+    <aside class="panel-b custom-side" style="padding:26px">
+      <h3 style="font-size:19px;margin:0 0 4px">3 · Send it over</h3>
+      <div class="sub" style="margin-bottom:18px">We'll reply with feasibility, price and timeline.</div>
+
+      <div class="preview" id="msg-preview"></div>
+
+      <div class="enq" style="margin-top:18px">
+        <button class="wa" id="c-wa">Send on WhatsApp →</button>
+        <button class="ig" id="c-ig">Send on Instagram</button>
+      </div>
+
+      <div style="margin-top:10px">
+        <button class="btn btn-block" id="c-copy">Copy message</button>
+      </div>
+
+      <div class="notice" style="margin-top:18px">
+        <b>One quick step:</b> WhatsApp and Instagram don't let a website attach your photo for you. When the chat opens, your first photo is already copied — just <b>paste</b> it into the chat (or use <b>Download photos</b> and attach them).
+      </div>
+
+      <div style="margin-top:12px">
+        <button class="btn btn-block" id="c-download">Download photos</button>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="footer" style="margin-top:70px">
+  <div class="container">
+    <div class="top">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/logo.png" alt="CrochetNest" style="width:40px;height:40px"></a>
+        <p class="blurb">Hand-crocheted, made-to-order pieces from a tiny studio. Every stitch by hand, every piece one of a kind.</p>
+      </div>
+      <div class="col"><h4>Shop</h4><a href="shop.html?category=Amigurumi">Amigurumi</a><a href="shop.html?category=Wearables">Wearables</a><a href="shop.html?category=Home Decor">Home Decor</a><a href="shop.html?category=Accessories">Accessories</a></div>
+      <div class="col"><h4>Company</h4><a href="index.html#story">Our Story</a><a href="customise.html">Customise</a><a href="admin.html">Admin</a></div>
+      <div class="col"><h4>Enquire</h4><a href="#" data-wa>WhatsApp</a><a href="#" data-ig>Instagram</a><a href="mailto:kanodiaanshul26@gmail.com">Email</a></div>
+    </div>
+    <div class="bar"><div>© 2026 CrochetNest</div><div>Handmade with ♥</div></div>
+  </div>
+</footer>
+
+<!-- Cart drawer (shared) -->
+<div class="overlay" id="cart-overlay" data-close-cart></div>
+<aside class="drawer" id="cart-drawer" aria-label="Cart">
+  <div class="dhead">
+    <h3>Your Cart <span class="cc" id="cart-count">· 0 pieces</span></h3>
+    <div class="icon-btn" data-close-cart>✕</div>
+  </div>
+  <div class="dbody" id="cart-items"></div>
+  <div class="dfoot">
+    <div class="drow"><span class="l">Estimated total</span><span class="v" id="cart-total">₹0</span></div>
+    <div class="enq-note">This is an <b>enquiry-only</b> cart. Send your list to confirm availability, custom options &amp; payment. Saved on this device only — it clears if you clear your browser.</div>
+    <div class="enq">
+      <button class="wa" data-wa>Send enquiry on WhatsApp →</button>
+      <button class="ig" data-ig>Enquire via Instagram</button>
+    </div>
+  </div>
+</aside>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

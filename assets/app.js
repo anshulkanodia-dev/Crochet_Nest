@@ -330,6 +330,125 @@
     });
   }
 
+  /* ---------- customise (custom request) page ---------- */
+  function renderCustomise() {
+    var MAX = 5;
+    var files = [];
+    var dz = $("#dropzone"), input = $("#file-input"), thumbs = $("#thumbs"), preview = $("#msg-preview");
+    if (!dz) return;
+
+    function addFiles(list) {
+      var arr = Array.prototype.slice.call(list || []);
+      arr.forEach(function (f) {
+        if (!/^image\//.test(f.type)) { toast("“" + f.name + "” isn’t an image"); return; }
+        if (files.length >= MAX) { toast("You can add up to " + MAX + " photos"); return; }
+        files.push({ file: f, url: URL.createObjectURL(f) });
+      });
+      renderThumbs();
+    }
+    function removeFile(i) {
+      URL.revokeObjectURL(files[i].url);
+      files.splice(i, 1);
+      renderThumbs();
+    }
+    function renderThumbs() {
+      thumbs.innerHTML = files.map(function (f, i) {
+        return '<div class="th"><img src="' + f.url + '" alt="' + esc(f.file.name) + '">' +
+          '<button data-rm="' + i + '" title="Remove">\u2715</button>' +
+          '<span class="nm">' + esc(f.file.name) + "</span></div>";
+      }).join("");
+      renderPreview();
+    }
+
+    function requestText() {
+      var msg = $("#c-msg").value.trim() || "Is it possible to make this?";
+      var lines = ["Hi CrochetNest! I have a custom request:", "", msg, ""];
+      var name = $("#c-name").value.trim();
+      var size = $("#c-size").value.trim();
+      var colour = $("#c-colour").value.trim();
+      var by = $("#c-date").value;
+      if (name) lines.push("Name: " + name);
+      if (size) lines.push("Size: " + size);
+      if (colour) lines.push("Colours: " + colour);
+      if (by) lines.push("Needed by: " + by);
+      if (name || size || colour || by) lines.push("");
+      lines.push(files.length
+        ? "(Attaching " + files.length + " reference photo" + (files.length > 1 ? "s" : "") + ".)"
+        : "(I'll share a reference photo next.)");
+      return lines.join("\n");
+    }
+    function renderPreview() { preview.textContent = requestText(); }
+
+    function copyFirstImage() {
+      if (!files.length) return Promise.resolve(false);
+      if (!(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write)) return Promise.resolve(false);
+      return new Promise(function (resolve) {
+        var img = new Image();
+        img.onload = function () {
+          var c = document.createElement("canvas");
+          c.width = img.naturalWidth; c.height = img.naturalHeight;
+          c.getContext("2d").drawImage(img, 0, 0);
+          c.toBlob(function (blob) {
+            if (!blob) { resolve(false); return; }
+            navigator.clipboard.write([new window.ClipboardItem({ "image/png": blob })])
+              .then(function () { resolve(true); })
+              .catch(function () { resolve(false); });
+          }, "image/png");
+        };
+        img.onerror = function () { resolve(false); };
+        img.src = files[0].url;
+      });
+    }
+
+    function downloadPhotos() {
+      if (!files.length) { toast("Add a photo first"); return; }
+      files.forEach(function (f, i) {
+        var a = document.createElement("a");
+        a.href = f.url;
+        a.download = f.file.name || ("crochetnest-reference-" + (i + 1));
+        a.click();
+      });
+      toast("Photos downloaded — attach them in the chat", true);
+    }
+
+    // events
+    dz.addEventListener("click", function () { input.click(); });
+    dz.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); input.click(); } });
+    input.addEventListener("change", function () { addFiles(input.files); input.value = ""; });
+    ["dragenter", "dragover"].forEach(function (ev) {
+      dz.addEventListener(ev, function (e) { e.preventDefault(); dz.classList.add("over"); });
+    });
+    ["dragleave", "drop"].forEach(function (ev) {
+      dz.addEventListener(ev, function (e) { e.preventDefault(); dz.classList.remove("over"); });
+    });
+    dz.addEventListener("drop", function (e) { addFiles(e.dataTransfer && e.dataTransfer.files); });
+    thumbs.addEventListener("click", function (e) {
+      var rm = e.target.getAttribute && e.target.getAttribute("data-rm");
+      if (rm !== null && rm !== undefined) removeFile(Number(rm));
+    });
+    ["c-msg", "c-name", "c-size", "c-colour", "c-date"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener("input", renderPreview);
+    });
+
+    $("#c-wa").addEventListener("click", function () {
+      var num = (SETTINGS.whatsappNumber || "").replace(/\D/g, "");
+      window.open("https://wa.me/" + num + "?text=" + encodeURIComponent(requestText()), "_blank");
+      copyFirstImage().then(function (ok) {
+        toast(ok ? "Photo copied — paste it in the chat" : (files.length ? "Attach your photo in the chat" : "Request opened in WhatsApp"), true);
+      });
+    });
+    $("#c-ig").addEventListener("click", function () {
+      window.open("https://instagram.com/" + encodeURIComponent(SETTINGS.instagramHandle || ""), "_blank");
+      copyText(requestText());
+      toast("Message copied — paste it in our DM with your photo", true);
+    });
+    $("#c-copy").addEventListener("click", function () { copyText(requestText()); toast("Message copied", true); });
+    $("#c-download").addEventListener("click", downloadPhotos);
+
+    renderPreview();
+  }
+
   /* ---------- global event wiring ---------- */
   function wire() {
     document.addEventListener("click", function (e) {
@@ -358,6 +477,7 @@
       if (page === "home") renderHome();
       else if (page === "shop") renderShop();
       else if (page === "product") renderProduct();
+      else if (page === "customise") renderCustomise();
     });
   });
 

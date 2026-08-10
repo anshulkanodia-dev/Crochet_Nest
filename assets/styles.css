@@ -339,3 +339,28 @@ img { display: block; max-width: 100%; }
 
 /* image from real photo */
 .media img.photo, .main img.photo, .im img.photo, .t img.photo { width: 100%; height: 100%; object-fit: cover; }
+
+/* ===== customise page ===== */
+.custom-wrap { display: grid; grid-template-columns: 1.6fr 1fr; gap: 22px; align-items: start; margin-top: 26px; }
+.custom-side { position: sticky; top: 92px; }
+
+.dropzone { border: 1.5px dashed var(--stroke-2); border-radius: 16px; background: var(--bg); padding: 40px 20px; text-align: center; cursor: pointer; transition: border-color .18s, background .18s; }
+.dropzone:hover, .dropzone:focus, .dropzone.over { border-color: var(--mint); background: var(--panel-2); outline: none; }
+.dropzone .dz-ico { font-size: 30px; margin-bottom: 10px; opacity: .85; }
+.dropzone .dz-t { font-weight: 600; font-size: 16px; color: var(--ink); }
+.dropzone .dz-s { font-size: 13.5px; color: var(--muted); margin-top: 5px; }
+
+.thumbs { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+.thumbs:empty { margin-top: 0; }
+.thumbs .th { position: relative; width: 104px; height: 104px; border-radius: 12px; overflow: hidden; border: 1px solid var(--stroke); background: var(--bg); }
+.thumbs .th img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.thumbs .th button { position: absolute; top: 6px; right: 6px; width: 24px; height: 24px; border: none; border-radius: 50%; background: rgba(0,0,0,.66); color: #fff; cursor: pointer; font-size: 13px; line-height: 1; }
+.thumbs .th button:hover { background: var(--coral); }
+.thumbs .th .nm { position: absolute; left: 0; right: 0; bottom: 0; padding: 4px 7px; font-size: 10.5px; color: var(--ink-2); background: linear-gradient(transparent, rgba(0,0,0,.8)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.preview { background: var(--bg); border: 1px solid var(--stroke); border-radius: 12px; padding: 16px; font-size: 13.5px; line-height: 1.65; color: var(--ink-2); white-space: pre-wrap; max-height: 260px; overflow: auto; }
+
+@media (max-width: 900px) {
+  .custom-wrap { grid-template-columns: 1fr; }
+  .custom-side { position: static; }
+}

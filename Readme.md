@@ -5,6 +5,9 @@ Built to be hosted entirely on **GitHub Pages** — no server required.
 
 - **Visitors** browse the catalogue by category, open product pages, add pieces to a
   cart (stored in the browser), and send a booking **enquiry via WhatsApp or Instagram**.
+- **Custom requests** — the *Customise* page lets a visitor pick or drag in reference
+  photos, fill in size / colour / deadline, and send "Is it possible to make this?"
+  over WhatsApp or Instagram.
 - **Admin** signs in with a one-time code (OTP) emailed to the studio address and can
   **add / edit / delete** products, **set the WhatsApp / Instagram contacts**, and
   **add / delete categories**; changes are published back to `data/products.json` and
@@ -16,11 +19,12 @@ Built to be hosted entirely on **GitHub Pages** — no server required.
 index.html            Home
 shop.html             Catalogue with category filters + sorting
 product.html          Product detail (?id=<product-id>)
+customise.html        Custom request form (photo picker + prefilled message)
 admin.html            Admin OTP login
 admin-dashboard.html  Admin product management
 assets/
   styles.css          Theme (dark charcoal + mint, from the logo)
-  app.js              Storefront: catalogue, cart, enquiry
+  app.js              Storefront: catalogue, cart, enquiry, custom requests
   admin.js            Admin: OTP login + product CRUD + GitHub publish
   config.js           Site configuration (safe to commit — NO secrets)
   logo.png            CrochetNest logo
