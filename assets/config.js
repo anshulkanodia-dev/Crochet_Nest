@@ -15,7 +15,7 @@ window.CN_CONFIG = {
   currencySymbol: "\u20b9", // ₹
 
   // Fallback categories (the live list lives in data/settings.json, editable in admin)
-  categories: ["Rakhi", "Dream Catchers", "Hairbands", "Hair Accessories", "Purses", "Bouquets", "Flowers & Bouquets", "Keychains", "Jewellery", "Photo Frames", "Stationery", "Home Décor"],
+  categories: ["Rakhi", "Dream Catchers", "Bouquets", "Flowers & Plants", "Hairbands", "Hair Accessories", "Purses", "Keychains", "Jewellery", "Photo Frames", "Stationery", "Home Décor", "Gifts & Keepsakes"],
 
   // Admin OTP login
   admin: {

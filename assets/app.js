@@ -41,7 +41,7 @@
   }
 
   function media(p, withKnot) {
-    if (p.image) return '<img class="photo" src="' + esc(p.image) + '" alt="' + esc(p.name) + '">';
+    if (p.image) return '<img class="photo" loading="lazy" decoding="async" src="' + esc(p.image) + '" alt="' + esc(p.name) + '">';
     return '<div class="ph ' + swatchFor(p) + '">' + (withKnot ? '<div class="knot"></div>' : "") + "</div>";
   }
 
@@ -210,7 +210,15 @@
   function renderHome() {
     loadProducts().then(function (products) {
       var feat = $("#featured-grid");
-      if (feat) feat.innerHTML = products.slice(0, 6).map(cardHTML).join("");
+      if (feat) {
+        var seen = {};
+        var spread = products.filter(function (p) {
+          if (seen[p.category]) return false;
+          seen[p.category] = true;
+          return true;
+        });
+        feat.innerHTML = spread.slice(0, 6).map(cardHTML).join("");
+      }
       var counts = {};
       products.forEach(function (p) { counts[p.category] = (counts[p.category] || 0) + 1; });
       var tiles = $("#cat-tiles");
@@ -253,18 +261,25 @@
         a.href = cat === "All" ? "shop.html" : "shop.html?category=" + encodeURIComponent(cat);
       });
       var list = activeCat === "All" ? products : products.filter(function (p) { return p.category === activeCat; });
-      var sort = $("#sort");
-      function apply() {
-        var arr = list.slice();
-        var v = sort ? sort.value : "featured";
-        if (v === "low") arr.sort(function (a, b) { return (a.price || Infinity) - (b.price || Infinity); });
-        else if (v === "high") arr.sort(function (a, b) { return (b.price || 0) - (a.price || 0); });
-        grid.innerHTML = arr.length ? arr.map(cardHTML).join("") : '<div class="cart-empty">No pieces in this category yet.</div>';
-        var res = $("#shop-res"); if (res) res.textContent = arr.length + " handmade item" + (arr.length === 1 ? "" : "s");
-        var title = $("#shop-title"); if (title) title.textContent = activeCat === "All" ? "All pieces" : activeCat;
+      var PAGE = 36;
+      var shown = 0;
+      var more = $("#shop-more");
+
+      function showNext() {
+        var next = list.slice(shown, shown + PAGE);
+        grid.insertAdjacentHTML("beforeend", next.map(cardHTML).join(""));
+        shown += next.length;
+        if (more) {
+          more.hidden = shown >= list.length;
+          more.textContent = "Show more (" + (list.length - shown) + " left)";
+        }
       }
-      if (sort) sort.addEventListener("change", apply);
-      apply();
+
+      grid.innerHTML = list.length ? "" : '<div class="cart-empty">No pieces in this category yet.</div>';
+      showNext();
+      if (more) more.addEventListener("click", showNext);
+      var res = $("#shop-res"); if (res) res.textContent = list.length + " handmade item" + (list.length === 1 ? "" : "s");
+      var title = $("#shop-title"); if (title) title.textContent = activeCat === "All" ? "All pieces" : activeCat;
     });
   }
 
@@ -452,6 +467,33 @@
     renderPreview();
   }
 
+  /* ---------- mobile menu ---------- */
+  function buildMobileMenu() {
+    var nav = $(".nav"), actions = $(".header-actions");
+    if (!nav || !actions || $("#menu-toggle")) return;
+
+    var toggle = document.createElement("button");
+    toggle.id = "menu-toggle";
+    toggle.className = "icon-btn menu-toggle";
+    toggle.setAttribute("aria-label", "Menu");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.innerHTML = "\u2261";
+    actions.appendChild(toggle);
+
+    var sheet = document.createElement("nav");
+    sheet.id = "mobile-menu";
+    sheet.className = "mobile-menu";
+    sheet.innerHTML = nav.innerHTML;
+    document.querySelector(".header").appendChild(sheet);
+
+    toggle.addEventListener("click", function () {
+      var open = sheet.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.innerHTML = open ? "\u2715" : "\u2261";
+    });
+    sheet.addEventListener("click", function () { sheet.classList.remove("open"); toggle.innerHTML = "\u2261"; });
+  }
+
   /* ---------- global event wiring ---------- */
   function wire() {
     document.addEventListener("click", function (e) {
@@ -473,6 +515,7 @@
   /* ---------- boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     wire();
+    buildMobileMenu();
     updateBadge();
     renderDrawer();
     var page = document.body.getAttribute("data-page");
