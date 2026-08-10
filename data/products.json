@@ -1,3887 +1,2307 @@
 {
   "products": [
     {
-      "id": "rakhi-01",
-      "name": "Rakhi — Design 01",
+      "id": "animal-friends-kids-rakhi",
+      "name": "Animal Friends Kids Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-01.webp"
+      "image": "assets/products/rakhi-27.webp",
+      "images": [
+        "assets/products/rakhi-27.webp",
+        "assets/products/rakhi-28.webp",
+        "assets/products/rakhi-29.webp",
+        "assets/products/rakhi-30.webp",
+        "assets/products/rakhi-31.webp",
+        "assets/products/rakhi-33.webp"
+      ]
     },
     {
-      "id": "rakhi-02",
-      "name": "Rakhi — Design 02",
+      "id": "best-bro-ever-kids-rakhi",
+      "name": "Best Bro Ever Kids Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-02.webp"
+      "image": "assets/products/rakhi-06.webp",
+      "images": [
+        "assets/products/rakhi-06.webp",
+        "assets/products/rakhi-10.webp"
+      ]
     },
     {
-      "id": "rakhi-03",
-      "name": "Rakhi — Design 03",
+      "id": "bhabhi-heart-lumba-rakhi",
+      "name": "Bhabhi Heart Lumba Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-03.webp"
+      "image": "assets/products/rakhi-66.webp",
+      "images": [
+        "assets/products/rakhi-66.webp",
+        "assets/products/rakhi-67.webp",
+        "assets/products/rakhi-72.webp",
+        "assets/products/rakhi-80.webp"
+      ]
     },
     {
-      "id": "rakhi-04",
-      "name": "Rakhi — Design 04",
+      "id": "blue-blossom-bhaiya-bhabhi-set",
+      "name": "Blue Blossom Bhaiya Bhabhi Set",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-04.webp"
+      "image": "assets/products/rakhi-44.webp",
+      "images": [
+        "assets/products/rakhi-44.webp",
+        "assets/products/rakhi-45.webp"
+      ]
     },
     {
-      "id": "rakhi-05",
-      "name": "Rakhi — Design 05",
+      "id": "blue-elephant-kids-rakhi",
+      "name": "Blue Elephant Kids Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-05.webp"
+      "image": "assets/products/rakhi-32.webp",
+      "images": [
+        "assets/products/rakhi-32.webp",
+        "assets/products/rakhi-34.webp"
+      ]
     },
     {
-      "id": "rakhi-06",
-      "name": "Rakhi — Design 06",
+      "id": "candy-swirl-rakhi",
+      "name": "Candy Swirl Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-06.webp"
+      "image": "assets/products/rakhi-42.webp",
+      "images": [
+        "assets/products/rakhi-42.webp",
+        "assets/products/rakhi-43.webp"
+      ]
     },
     {
-      "id": "rakhi-07",
-      "name": "Rakhi — Design 07",
+      "id": "coral-bead-rakhi-pair",
+      "name": "Coral Bead Rakhi Pair",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-07.webp"
+      "image": "assets/products/rakhi-51.webp",
+      "images": [
+        "assets/products/rakhi-51.webp"
+      ]
     },
     {
-      "id": "rakhi-08",
-      "name": "Rakhi — Design 08",
+      "id": "cream-flower-zari-rakhi",
+      "name": "Cream Flower Zari Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-08.webp"
+      "image": "assets/products/rakhi-53.webp",
+      "images": [
+        "assets/products/rakhi-53.webp",
+        "assets/products/rakhi-55.webp",
+        "assets/products/rakhi-83.webp",
+        "assets/products/rakhi-85.webp",
+        "assets/products/rakhi-86.webp",
+        "assets/products/rakhi-88.webp"
+      ]
     },
     {
-      "id": "rakhi-09",
-      "name": "Rakhi — Design 09",
+      "id": "cream-rose-rakhi-set",
+      "name": "Cream Rose Rakhi Set",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-09.webp"
+      "image": "assets/products/rakhi-03.webp",
+      "images": [
+        "assets/products/rakhi-03.webp",
+        "assets/products/rakhi-04.webp",
+        "assets/products/rakhi-07.webp",
+        "assets/products/rakhi-08.webp"
+      ]
     },
     {
-      "id": "rakhi-10",
-      "name": "Rakhi — Design 10",
+      "id": "ivory-diamond-zari-rakhi",
+      "name": "Ivory Diamond Zari Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-10.webp"
+      "image": "assets/products/rakhi-68.webp",
+      "images": [
+        "assets/products/rakhi-68.webp",
+        "assets/products/rakhi-69.webp",
+        "assets/products/rakhi-73.webp"
+      ]
     },
     {
-      "id": "rakhi-11",
-      "name": "Rakhi — Design 11",
+      "id": "ivory-flower-navy-tassel-rakhi",
+      "name": "Ivory Flower Navy Tassel Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-11.webp"
+      "image": "assets/products/rakhi-52.webp",
+      "images": [
+        "assets/products/rakhi-52.webp",
+        "assets/products/rakhi-77.webp",
+        "assets/products/rakhi-78.webp"
+      ]
     },
     {
-      "id": "rakhi-12",
-      "name": "Rakhi — Design 12",
+      "id": "ivory-square-lumba-set",
+      "name": "Ivory Square Lumba Set",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-12.webp"
+      "image": "assets/products/rakhi-46.webp",
+      "images": [
+        "assets/products/rakhi-46.webp",
+        "assets/products/rakhi-47.webp",
+        "assets/products/rakhi-91.webp"
+      ]
     },
     {
-      "id": "rakhi-13",
-      "name": "Rakhi — Design 13",
+      "id": "kundan-berry-lumba-rakhi",
+      "name": "Kundan Berry Lumba Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-13.webp"
+      "image": "assets/products/rakhi-12.webp",
+      "images": [
+        "assets/products/rakhi-12.webp",
+        "assets/products/rakhi-13.webp"
+      ]
     },
     {
-      "id": "rakhi-14",
-      "name": "Rakhi — Design 14",
+      "id": "little-car-kids-rakhi",
+      "name": "Little Car Kids Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-14.webp"
+      "image": "assets/products/rakhi-22.webp",
+      "images": [
+        "assets/products/rakhi-22.webp",
+        "assets/products/rakhi-23.webp"
+      ]
     },
     {
-      "id": "rakhi-15",
-      "name": "Rakhi — Design 15",
+      "id": "magenta-blossom-bracelet-rakhi",
+      "name": "Magenta Blossom Bracelet Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-15.webp"
+      "image": "assets/products/rakhi-59.webp",
+      "images": [
+        "assets/products/rakhi-59.webp",
+        "assets/products/rakhi-60.webp",
+        "assets/products/rakhi-61.webp",
+        "assets/products/rakhi-62.webp"
+      ]
     },
     {
-      "id": "rakhi-16",
-      "name": "Rakhi — Design 16",
+      "id": "mini-flower-kids-rakhi",
+      "name": "Mini Flower Kids Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-16.webp"
+      "image": "assets/products/rakhi-20.webp",
+      "images": [
+        "assets/products/rakhi-20.webp"
+      ]
     },
     {
-      "id": "rakhi-17",
-      "name": "Rakhi — Design 17",
+      "id": "mint-panel-rakhi",
+      "name": "Mint Panel Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-17.webp"
+      "image": "assets/products/rakhi-54.webp",
+      "images": [
+        "assets/products/rakhi-54.webp",
+        "assets/products/rakhi-89.webp"
+      ]
     },
     {
-      "id": "rakhi-18",
-      "name": "Rakhi — Design 18",
+      "id": "multicolour-bead-thread-rakhi",
+      "name": "Multicolour Bead Thread Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-18.webp"
+      "image": "assets/products/rakhi-18.webp",
+      "images": [
+        "assets/products/rakhi-18.webp"
+      ]
     },
     {
-      "id": "rakhi-19",
-      "name": "Rakhi — Design 19",
+      "id": "orange-blossom-tassel-rakhi",
+      "name": "Orange Blossom Tassel Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-19.webp"
+      "image": "assets/products/rakhi-79.webp",
+      "images": [
+        "assets/products/rakhi-79.webp",
+        "assets/products/rakhi-81.webp"
+      ]
     },
     {
-      "id": "rakhi-20",
-      "name": "Rakhi — Design 20",
+      "id": "peach-rose-beaded-rakhi",
+      "name": "Peach Rose Beaded Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-20.webp"
+      "image": "assets/products/rakhi-84.webp",
+      "images": [
+        "assets/products/rakhi-84.webp",
+        "assets/products/rakhi-90.webp"
+      ]
     },
     {
-      "id": "rakhi-21",
-      "name": "Rakhi — Design 21",
+      "id": "peach-square-tassel-rakhi",
+      "name": "Peach Square Tassel Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-21.webp"
+      "image": "assets/products/rakhi-21.webp",
+      "images": [
+        "assets/products/rakhi-21.webp"
+      ]
     },
     {
-      "id": "rakhi-22",
-      "name": "Rakhi — Design 22",
+      "id": "pink-beaded-lumba-rakhi",
+      "name": "Pink Beaded Lumba Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-22.webp"
+      "image": "assets/products/rakhi-17.webp",
+      "images": [
+        "assets/products/rakhi-17.webp"
+      ]
     },
     {
-      "id": "rakhi-23",
-      "name": "Rakhi — Design 23",
+      "id": "pink-blossom-chain-rakhi",
+      "name": "Pink Blossom Chain Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-23.webp"
+      "image": "assets/products/rakhi-15.webp",
+      "images": [
+        "assets/products/rakhi-15.webp",
+        "assets/products/rakhi-16.webp"
+      ]
     },
     {
-      "id": "rakhi-24",
-      "name": "Rakhi — Design 24",
+      "id": "pink-heart-lumba-rakhi",
+      "name": "Pink Heart Lumba Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-24.webp"
+      "image": "assets/products/rakhi-48.webp",
+      "images": [
+        "assets/products/rakhi-48.webp",
+        "assets/products/rakhi-49.webp"
+      ]
     },
     {
-      "id": "rakhi-25",
-      "name": "Rakhi — Design 25",
+      "id": "pink-heart-rakhi",
+      "name": "Pink Heart Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-25.webp"
+      "image": "assets/products/rakhi-19.webp",
+      "images": [
+        "assets/products/rakhi-19.webp"
+      ]
     },
     {
-      "id": "rakhi-26",
-      "name": "Rakhi — Design 26",
+      "id": "red-beaded-square-rakhi",
+      "name": "Red Beaded Square Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-26.webp"
+      "image": "assets/products/rakhi-05.webp",
+      "images": [
+        "assets/products/rakhi-05.webp",
+        "assets/products/rakhi-09.webp",
+        "assets/products/rakhi-11.webp"
+      ]
     },
     {
-      "id": "rakhi-27",
-      "name": "Rakhi — Design 27",
+      "id": "red-flower-tassel-rakhi",
+      "name": "Red Flower Tassel Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-27.webp"
+      "image": "assets/products/rakhi-14.webp",
+      "images": [
+        "assets/products/rakhi-14.webp"
+      ]
     },
     {
-      "id": "rakhi-28",
-      "name": "Rakhi — Design 28",
+      "id": "red-zari-square-rakhi-pair",
+      "name": "Red Zari Square Rakhi Pair",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-28.webp"
+      "image": "assets/products/rakhi-01.webp",
+      "images": [
+        "assets/products/rakhi-01.webp",
+        "assets/products/rakhi-02.webp"
+      ]
     },
     {
-      "id": "rakhi-29",
-      "name": "Rakhi — Design 29",
+      "id": "rose-fern-rakhi-pair",
+      "name": "Rose & Fern Rakhi Pair",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-29.webp"
+      "image": "assets/products/rakhi-50.webp",
+      "images": [
+        "assets/products/rakhi-50.webp"
+      ]
     },
     {
-      "id": "rakhi-30",
-      "name": "Rakhi — Design 30",
+      "id": "rose-fern-tassel-rakhi",
+      "name": "Rose & Fern Tassel Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-30.webp"
+      "image": "assets/products/rakhi-64.webp",
+      "images": [
+        "assets/products/rakhi-64.webp",
+        "assets/products/rakhi-65.webp",
+        "assets/products/rakhi-74.webp",
+        "assets/products/rakhi-75.webp",
+        "assets/products/rakhi-76.webp"
+      ]
     },
     {
-      "id": "rakhi-31",
-      "name": "Rakhi — Design 31",
+      "id": "smiley-kids-rakhi",
+      "name": "Smiley Kids Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-31.webp"
+      "image": "assets/products/rakhi-24.webp",
+      "images": [
+        "assets/products/rakhi-24.webp",
+        "assets/products/rakhi-25.webp",
+        "assets/products/rakhi-26.webp"
+      ]
     },
     {
-      "id": "rakhi-32",
-      "name": "Rakhi — Design 32",
+      "id": "teal-blossom-jhumka-rakhi",
+      "name": "Teal Blossom Jhumka Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-32.webp"
+      "image": "assets/products/rakhi-70.webp",
+      "images": [
+        "assets/products/rakhi-70.webp",
+        "assets/products/rakhi-71.webp",
+        "assets/products/rakhi-82.webp",
+        "assets/products/rakhi-87.webp"
+      ]
     },
     {
-      "id": "rakhi-33",
-      "name": "Rakhi — Design 33",
+      "id": "unicorn-dolphin-kids-rakhi",
+      "name": "Unicorn & Dolphin Kids Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-33.webp"
+      "image": "assets/products/rakhi-35.webp",
+      "images": [
+        "assets/products/rakhi-35.webp",
+        "assets/products/rakhi-36.webp",
+        "assets/products/rakhi-37.webp",
+        "assets/products/rakhi-38.webp",
+        "assets/products/rakhi-39.webp",
+        "assets/products/rakhi-40.webp",
+        "assets/products/rakhi-41.webp"
+      ]
     },
     {
-      "id": "rakhi-34",
-      "name": "Rakhi — Design 34",
+      "id": "yellow-blossom-bracelet-rakhi",
+      "name": "Yellow Blossom Bracelet Rakhi",
       "category": "Rakhi",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/rakhi-34.webp"
+      "image": "assets/products/rakhi-56.webp",
+      "images": [
+        "assets/products/rakhi-56.webp",
+        "assets/products/rakhi-57.webp",
+        "assets/products/rakhi-58.webp",
+        "assets/products/rakhi-63.webp"
+      ]
     },
     {
-      "id": "rakhi-35",
-      "name": "Rakhi — Design 35",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-35.webp"
-    },
-    {
-      "id": "rakhi-36",
-      "name": "Rakhi — Design 36",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-36.webp"
-    },
-    {
-      "id": "rakhi-37",
-      "name": "Rakhi — Design 37",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-37.webp"
-    },
-    {
-      "id": "rakhi-38",
-      "name": "Rakhi — Design 38",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-38.webp"
-    },
-    {
-      "id": "rakhi-39",
-      "name": "Rakhi — Design 39",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-39.webp"
-    },
-    {
-      "id": "rakhi-40",
-      "name": "Rakhi — Design 40",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-40.webp"
-    },
-    {
-      "id": "rakhi-41",
-      "name": "Rakhi — Design 41",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-41.webp"
-    },
-    {
-      "id": "rakhi-42",
-      "name": "Rakhi — Design 42",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-42.webp"
-    },
-    {
-      "id": "rakhi-43",
-      "name": "Rakhi — Design 43",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-43.webp"
-    },
-    {
-      "id": "rakhi-44",
-      "name": "Rakhi — Design 44",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-44.webp"
-    },
-    {
-      "id": "rakhi-45",
-      "name": "Rakhi — Design 45",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-45.webp"
-    },
-    {
-      "id": "rakhi-46",
-      "name": "Rakhi — Design 46",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-46.webp"
-    },
-    {
-      "id": "rakhi-47",
-      "name": "Rakhi — Design 47",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-47.webp"
-    },
-    {
-      "id": "rakhi-48",
-      "name": "Rakhi — Design 48",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-48.webp"
-    },
-    {
-      "id": "rakhi-49",
-      "name": "Rakhi — Design 49",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-49.webp"
-    },
-    {
-      "id": "rakhi-50",
-      "name": "Rakhi — Design 50",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-50.webp"
-    },
-    {
-      "id": "rakhi-51",
-      "name": "Rakhi — Design 51",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-51.webp"
-    },
-    {
-      "id": "rakhi-52",
-      "name": "Rakhi — Design 52",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-52.webp"
-    },
-    {
-      "id": "rakhi-53",
-      "name": "Rakhi — Design 53",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-53.webp"
-    },
-    {
-      "id": "rakhi-54",
-      "name": "Rakhi — Design 54",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-54.webp"
-    },
-    {
-      "id": "rakhi-55",
-      "name": "Rakhi — Design 55",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-55.webp"
-    },
-    {
-      "id": "rakhi-56",
-      "name": "Rakhi — Design 56",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-56.webp"
-    },
-    {
-      "id": "rakhi-57",
-      "name": "Rakhi — Design 57",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-57.webp"
-    },
-    {
-      "id": "rakhi-58",
-      "name": "Rakhi — Design 58",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-58.webp"
-    },
-    {
-      "id": "rakhi-59",
-      "name": "Rakhi — Design 59",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-59.webp"
-    },
-    {
-      "id": "rakhi-60",
-      "name": "Rakhi — Design 60",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-60.webp"
-    },
-    {
-      "id": "rakhi-61",
-      "name": "Rakhi — Design 61",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-61.webp"
-    },
-    {
-      "id": "rakhi-62",
-      "name": "Rakhi — Design 62",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-62.webp"
-    },
-    {
-      "id": "rakhi-63",
-      "name": "Rakhi — Design 63",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-63.webp"
-    },
-    {
-      "id": "rakhi-64",
-      "name": "Rakhi — Design 64",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-64.webp"
-    },
-    {
-      "id": "rakhi-65",
-      "name": "Rakhi — Design 65",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-65.webp"
-    },
-    {
-      "id": "rakhi-66",
-      "name": "Rakhi — Design 66",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-66.webp"
-    },
-    {
-      "id": "rakhi-67",
-      "name": "Rakhi — Design 67",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-67.webp"
-    },
-    {
-      "id": "rakhi-68",
-      "name": "Rakhi — Design 68",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-68.webp"
-    },
-    {
-      "id": "rakhi-69",
-      "name": "Rakhi — Design 69",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-69.webp"
-    },
-    {
-      "id": "rakhi-70",
-      "name": "Rakhi — Design 70",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-70.webp"
-    },
-    {
-      "id": "rakhi-71",
-      "name": "Rakhi — Design 71",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-71.webp"
-    },
-    {
-      "id": "rakhi-72",
-      "name": "Rakhi — Design 72",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-72.webp"
-    },
-    {
-      "id": "rakhi-73",
-      "name": "Rakhi — Design 73",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-73.webp"
-    },
-    {
-      "id": "rakhi-74",
-      "name": "Rakhi — Design 74",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-74.webp"
-    },
-    {
-      "id": "rakhi-75",
-      "name": "Rakhi — Design 75",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-75.webp"
-    },
-    {
-      "id": "rakhi-76",
-      "name": "Rakhi — Design 76",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-76.webp"
-    },
-    {
-      "id": "rakhi-77",
-      "name": "Rakhi — Design 77",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-77.webp"
-    },
-    {
-      "id": "rakhi-78",
-      "name": "Rakhi — Design 78",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-78.webp"
-    },
-    {
-      "id": "rakhi-79",
-      "name": "Rakhi — Design 79",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-79.webp"
-    },
-    {
-      "id": "rakhi-80",
-      "name": "Rakhi — Design 80",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-80.webp"
-    },
-    {
-      "id": "rakhi-81",
-      "name": "Rakhi — Design 81",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-81.webp"
-    },
-    {
-      "id": "rakhi-82",
-      "name": "Rakhi — Design 82",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-82.webp"
-    },
-    {
-      "id": "rakhi-83",
-      "name": "Rakhi — Design 83",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-83.webp"
-    },
-    {
-      "id": "rakhi-84",
-      "name": "Rakhi — Design 84",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-84.webp"
-    },
-    {
-      "id": "rakhi-85",
-      "name": "Rakhi — Design 85",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-85.webp"
-    },
-    {
-      "id": "rakhi-86",
-      "name": "Rakhi — Design 86",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-86.webp"
-    },
-    {
-      "id": "rakhi-87",
-      "name": "Rakhi — Design 87",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-87.webp"
-    },
-    {
-      "id": "rakhi-88",
-      "name": "Rakhi — Design 88",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-88.webp"
-    },
-    {
-      "id": "rakhi-89",
-      "name": "Rakhi — Design 89",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-89.webp"
-    },
-    {
-      "id": "rakhi-90",
-      "name": "Rakhi — Design 90",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-90.webp"
-    },
-    {
-      "id": "rakhi-91",
-      "name": "Rakhi — Design 91",
-      "category": "Rakhi",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted rakhi from the CrochetNest studio, finished with beads, thread work and tassel detailing.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/rakhi-91.webp"
-    },
-    {
-      "id": "dream-catchers-01",
-      "name": "Dream Catchers — Design 01",
+      "id": "blush-sage-tassel-dream-catcher",
+      "name": "Blush & Sage Tassel Dream Catcher",
       "category": "Dream Catchers",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/dream-catchers-01.webp"
+      "image": "assets/products/dream-catchers-12.webp",
+      "images": [
+        "assets/products/dream-catchers-12.webp",
+        "assets/products/dream-catchers-13.webp",
+        "assets/products/dream-catchers-14.webp",
+        "assets/products/dream-catchers-15.webp",
+        "assets/products/dream-catchers-16.webp",
+        "assets/products/dream-catchers-17.webp"
+      ]
     },
     {
-      "id": "dream-catchers-02",
-      "name": "Dream Catchers — Design 02",
+      "id": "evil-eye-wall-hanging-with-black-tassels",
+      "name": "Evil Eye Wall Hanging with Black Tassels",
       "category": "Dream Catchers",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/dream-catchers-02.webp"
+      "image": "assets/products/dream-catchers-01.webp",
+      "images": [
+        "assets/products/dream-catchers-01.webp",
+        "assets/products/dream-catchers-02.webp",
+        "assets/products/dream-catchers-03.webp",
+        "assets/products/dream-catchers-04.webp"
+      ]
     },
     {
-      "id": "dream-catchers-03",
-      "name": "Dream Catchers — Design 03",
+      "id": "layered-evil-eye-wall-hanging",
+      "name": "Layered Evil Eye Wall Hanging",
       "category": "Dream Catchers",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/dream-catchers-03.webp"
+      "image": "assets/products/dream-catchers-05.webp",
+      "images": [
+        "assets/products/dream-catchers-05.webp",
+        "assets/products/dream-catchers-06.webp",
+        "assets/products/dream-catchers-07.webp",
+        "assets/products/dream-catchers-08.webp"
+      ]
     },
     {
-      "id": "dream-catchers-04",
-      "name": "Dream Catchers — Design 04",
+      "id": "lilac-tassel-dream-catcher",
+      "name": "Lilac Tassel Dream Catcher",
       "category": "Dream Catchers",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/dream-catchers-04.webp"
+      "image": "assets/products/dream-catchers-10.webp",
+      "images": [
+        "assets/products/dream-catchers-10.webp"
+      ]
     },
     {
-      "id": "dream-catchers-05",
-      "name": "Dream Catchers — Design 05",
+      "id": "pastel-floral-dream-catcher",
+      "name": "Pastel Floral Dream Catcher",
       "category": "Dream Catchers",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/dream-catchers-05.webp"
+      "image": "assets/products/dream-catchers-09.webp",
+      "images": [
+        "assets/products/dream-catchers-09.webp"
+      ]
     },
     {
-      "id": "dream-catchers-06",
-      "name": "Dream Catchers — Design 06",
+      "id": "rainbow-bead-dream-catcher",
+      "name": "Rainbow Bead Dream Catcher",
       "category": "Dream Catchers",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/dream-catchers-06.webp"
+      "image": "assets/products/dream-catchers-11.webp",
+      "images": [
+        "assets/products/dream-catchers-11.webp"
+      ]
     },
     {
-      "id": "dream-catchers-07",
-      "name": "Dream Catchers — Design 07",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-07.webp"
-    },
-    {
-      "id": "dream-catchers-08",
-      "name": "Dream Catchers — Design 08",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-08.webp"
-    },
-    {
-      "id": "dream-catchers-09",
-      "name": "Dream Catchers — Design 09",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-09.webp"
-    },
-    {
-      "id": "dream-catchers-10",
-      "name": "Dream Catchers — Design 10",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-10.webp"
-    },
-    {
-      "id": "dream-catchers-11",
-      "name": "Dream Catchers — Design 11",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-11.webp"
-    },
-    {
-      "id": "dream-catchers-12",
-      "name": "Dream Catchers — Design 12",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-12.webp"
-    },
-    {
-      "id": "dream-catchers-13",
-      "name": "Dream Catchers — Design 13",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-13.webp"
-    },
-    {
-      "id": "dream-catchers-14",
-      "name": "Dream Catchers — Design 14",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-14.webp"
-    },
-    {
-      "id": "dream-catchers-15",
-      "name": "Dream Catchers — Design 15",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-15.webp"
-    },
-    {
-      "id": "dream-catchers-16",
-      "name": "Dream Catchers — Design 16",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-16.webp"
-    },
-    {
-      "id": "dream-catchers-17",
-      "name": "Dream Catchers — Design 17",
-      "category": "Dream Catchers",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted wall hanging with woven detailing, beads and tassels — made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/dream-catchers-17.webp"
-    },
-    {
-      "id": "bouquets-01",
-      "name": "Bouquets — Design 01",
+      "id": "lilac-lily-bouquet-in-blush-wrap",
+      "name": "Lilac Lily Bouquet in Blush Wrap",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-01.webp"
+      "image": "assets/products/bouquets-08.webp",
+      "images": [
+        "assets/products/bouquets-08.webp",
+        "assets/products/bouquets-09.webp",
+        "assets/products/bouquets-10.webp",
+        "assets/products/bouquets-11.webp",
+        "assets/products/bouquets-12.webp",
+        "assets/products/bouquets-13.webp",
+        "assets/products/bouquets-14.webp",
+        "assets/products/bouquets-15.webp",
+        "assets/products/bouquets-16.webp"
+      ]
     },
     {
-      "id": "bouquets-02",
-      "name": "Bouquets — Design 02",
+      "id": "lily-lavender-hand-bouquet",
+      "name": "Lily & Lavender Hand Bouquet",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-02.webp"
+      "image": "assets/products/bouquets-02.webp",
+      "images": [
+        "assets/products/bouquets-02.webp"
+      ]
     },
     {
-      "id": "bouquets-03",
-      "name": "Bouquets — Design 03",
+      "id": "mixed-blossom-bunch",
+      "name": "Mixed Blossom Bunch",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-03.webp"
+      "image": "assets/products/bouquets-06.webp",
+      "images": [
+        "assets/products/bouquets-06.webp"
+      ]
     },
     {
-      "id": "bouquets-04",
-      "name": "Bouquets — Design 04",
+      "id": "mocha-blush-lily-bouquet",
+      "name": "Mocha & Blush Lily Bouquet",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-04.webp"
+      "image": "assets/products/bouquets-21.webp",
+      "images": [
+        "assets/products/bouquets-21.webp",
+        "assets/products/bouquets-22.webp",
+        "assets/products/bouquets-23.webp",
+        "assets/products/bouquets-24.webp"
+      ]
     },
     {
-      "id": "bouquets-05",
-      "name": "Bouquets — Design 05",
+      "id": "pastel-daisy-tulip-bouquet",
+      "name": "Pastel Daisy & Tulip Bouquet",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-05.webp"
+      "image": "assets/products/bouquets-01.webp",
+      "images": [
+        "assets/products/bouquets-01.webp"
+      ]
     },
     {
-      "id": "bouquets-06",
-      "name": "Bouquets — Design 06",
+      "id": "peach-ivory-lily-bunch",
+      "name": "Peach & Ivory Lily Bunch",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-06.webp"
+      "image": "assets/products/bouquets-17.webp",
+      "images": [
+        "assets/products/bouquets-17.webp",
+        "assets/products/bouquets-18.webp",
+        "assets/products/bouquets-19.webp",
+        "assets/products/bouquets-20.webp"
+      ]
     },
     {
-      "id": "bouquets-07",
-      "name": "Bouquets — Design 07",
+      "id": "studio-flower-collection",
+      "name": "Studio Flower Collection",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-07.webp"
+      "image": "assets/products/bouquets-05.webp",
+      "images": [
+        "assets/products/bouquets-05.webp"
+      ]
     },
     {
-      "id": "bouquets-08",
-      "name": "Bouquets — Design 08",
+      "id": "sunflower-daisy-bouquet",
+      "name": "Sunflower & Daisy Bouquet",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-08.webp"
+      "image": "assets/products/bouquets-07.webp",
+      "images": [
+        "assets/products/bouquets-07.webp"
+      ]
     },
     {
-      "id": "bouquets-09",
-      "name": "Bouquets — Design 09",
+      "id": "sunflower-motif-set",
+      "name": "Sunflower Motif Set",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-09.webp"
+      "image": "assets/products/bouquets-04.webp",
+      "images": [
+        "assets/products/bouquets-04.webp"
+      ]
     },
     {
-      "id": "bouquets-10",
-      "name": "Bouquets — Design 10",
+      "id": "white-lily-bouquet",
+      "name": "White Lily Bouquet",
       "category": "Bouquets",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/bouquets-10.webp"
+      "image": "assets/products/bouquets-03.webp",
+      "images": [
+        "assets/products/bouquets-03.webp"
+      ]
     },
     {
-      "id": "bouquets-11",
-      "name": "Bouquets — Design 11",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-11.webp"
-    },
-    {
-      "id": "bouquets-12",
-      "name": "Bouquets — Design 12",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-12.webp"
-    },
-    {
-      "id": "bouquets-13",
-      "name": "Bouquets — Design 13",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-13.webp"
-    },
-    {
-      "id": "bouquets-14",
-      "name": "Bouquets — Design 14",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-14.webp"
-    },
-    {
-      "id": "bouquets-15",
-      "name": "Bouquets — Design 15",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-15.webp"
-    },
-    {
-      "id": "bouquets-16",
-      "name": "Bouquets — Design 16",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-16.webp"
-    },
-    {
-      "id": "bouquets-17",
-      "name": "Bouquets — Design 17",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-17.webp"
-    },
-    {
-      "id": "bouquets-18",
-      "name": "Bouquets — Design 18",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-18.webp"
-    },
-    {
-      "id": "bouquets-19",
-      "name": "Bouquets — Design 19",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-19.webp"
-    },
-    {
-      "id": "bouquets-20",
-      "name": "Bouquets — Design 20",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-20.webp"
-    },
-    {
-      "id": "bouquets-21",
-      "name": "Bouquets — Design 21",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-21.webp"
-    },
-    {
-      "id": "bouquets-22",
-      "name": "Bouquets — Design 22",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-22.webp"
-    },
-    {
-      "id": "bouquets-23",
-      "name": "Bouquets — Design 23",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-23.webp"
-    },
-    {
-      "id": "bouquets-24",
-      "name": "Bouquets — Design 24",
-      "category": "Bouquets",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted bouquet that never wilts, arranged and wrapped by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/bouquets-24.webp"
-    },
-    {
-      "id": "flowers-plants-01",
-      "name": "Flowers & Plants — Design 01",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-01.webp"
-    },
-    {
-      "id": "flowers-plants-02",
-      "name": "Flowers & Plants — Design 02",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-02.webp"
-    },
-    {
-      "id": "flowers-plants-03",
-      "name": "Flowers & Plants — Design 03",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-03.webp"
-    },
-    {
-      "id": "flowers-plants-04",
-      "name": "Flowers & Plants — Design 04",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-04.webp"
-    },
-    {
-      "id": "flowers-plants-05",
-      "name": "Flowers & Plants — Design 05",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-05.webp"
-    },
-    {
-      "id": "flowers-plants-06",
-      "name": "Flowers & Plants — Design 06",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-06.webp"
-    },
-    {
-      "id": "flowers-plants-07",
-      "name": "Flowers & Plants — Design 07",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-07.webp"
-    },
-    {
-      "id": "flowers-plants-08",
-      "name": "Flowers & Plants — Design 08",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-08.webp"
-    },
-    {
-      "id": "flowers-plants-09",
-      "name": "Flowers & Plants — Design 09",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-09.webp"
-    },
-    {
-      "id": "flowers-plants-10",
-      "name": "Flowers & Plants — Design 10",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-10.webp"
-    },
-    {
-      "id": "flowers-plants-11",
-      "name": "Flowers & Plants — Design 11",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-11.webp"
-    },
-    {
-      "id": "flowers-plants-12",
-      "name": "Flowers & Plants — Design 12",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-12.webp"
-    },
-    {
-      "id": "flowers-plants-13",
-      "name": "Flowers & Plants — Design 13",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-13.webp"
-    },
-    {
-      "id": "flowers-plants-14",
-      "name": "Flowers & Plants — Design 14",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-14.webp"
-    },
-    {
-      "id": "flowers-plants-15",
-      "name": "Flowers & Plants — Design 15",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-15.webp"
-    },
-    {
-      "id": "flowers-plants-16",
-      "name": "Flowers & Plants — Design 16",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-16.webp"
-    },
-    {
-      "id": "flowers-plants-17",
-      "name": "Flowers & Plants — Design 17",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-17.webp"
-    },
-    {
-      "id": "flowers-plants-18",
-      "name": "Flowers & Plants — Design 18",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-18.webp"
-    },
-    {
-      "id": "flowers-plants-19",
-      "name": "Flowers & Plants — Design 19",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-19.webp"
-    },
-    {
-      "id": "flowers-plants-20",
-      "name": "Flowers & Plants — Design 20",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-20.webp"
-    },
-    {
-      "id": "flowers-plants-21",
-      "name": "Flowers & Plants — Design 21",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-21.webp"
-    },
-    {
-      "id": "flowers-plants-22",
-      "name": "Flowers & Plants — Design 22",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-22.webp"
-    },
-    {
-      "id": "flowers-plants-23",
-      "name": "Flowers & Plants — Design 23",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-23.webp"
-    },
-    {
-      "id": "flowers-plants-24",
-      "name": "Flowers & Plants — Design 24",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-24.webp"
-    },
-    {
-      "id": "flowers-plants-25",
-      "name": "Flowers & Plants — Design 25",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-25.webp"
-    },
-    {
-      "id": "flowers-plants-26",
-      "name": "Flowers & Plants — Design 26",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-26.webp"
-    },
-    {
-      "id": "flowers-plants-27",
-      "name": "Flowers & Plants — Design 27",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-27.webp"
-    },
-    {
-      "id": "flowers-plants-28",
-      "name": "Flowers & Plants — Design 28",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-28.webp"
-    },
-    {
-      "id": "flowers-plants-29",
-      "name": "Flowers & Plants — Design 29",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-29.webp"
-    },
-    {
-      "id": "flowers-plants-30",
-      "name": "Flowers & Plants — Design 30",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-30.webp"
-    },
-    {
-      "id": "flowers-plants-31",
-      "name": "Flowers & Plants — Design 31",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-31.webp"
-    },
-    {
-      "id": "flowers-plants-32",
-      "name": "Flowers & Plants — Design 32",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-32.webp"
-    },
-    {
-      "id": "flowers-plants-33",
-      "name": "Flowers & Plants — Design 33",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-33.webp"
-    },
-    {
-      "id": "flowers-plants-34",
-      "name": "Flowers & Plants — Design 34",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-34.webp"
-    },
-    {
-      "id": "flowers-plants-35",
-      "name": "Flowers & Plants — Design 35",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-35.webp"
-    },
-    {
-      "id": "flowers-plants-36",
-      "name": "Flowers & Plants — Design 36",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-36.webp"
-    },
-    {
-      "id": "flowers-plants-37",
-      "name": "Flowers & Plants — Design 37",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-37.webp"
-    },
-    {
-      "id": "flowers-plants-38",
-      "name": "Flowers & Plants — Design 38",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-38.webp"
-    },
-    {
-      "id": "flowers-plants-39",
-      "name": "Flowers & Plants — Design 39",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-39.webp"
-    },
-    {
-      "id": "flowers-plants-40",
-      "name": "Flowers & Plants — Design 40",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-40.webp"
-    },
-    {
-      "id": "flowers-plants-41",
-      "name": "Flowers & Plants — Design 41",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-41.webp"
-    },
-    {
-      "id": "flowers-plants-42",
-      "name": "Flowers & Plants — Design 42",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-42.webp"
-    },
-    {
-      "id": "flowers-plants-43",
-      "name": "Flowers & Plants — Design 43",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-43.webp"
-    },
-    {
-      "id": "flowers-plants-44",
-      "name": "Flowers & Plants — Design 44",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-44.webp"
-    },
-    {
-      "id": "flowers-plants-45",
-      "name": "Flowers & Plants — Design 45",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-45.webp"
-    },
-    {
-      "id": "flowers-plants-46",
-      "name": "Flowers & Plants — Design 46",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-46.webp"
-    },
-    {
-      "id": "flowers-plants-47",
-      "name": "Flowers & Plants — Design 47",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-47.webp"
-    },
-    {
-      "id": "flowers-plants-48",
-      "name": "Flowers & Plants — Design 48",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-48.webp"
-    },
-    {
-      "id": "flowers-plants-49",
-      "name": "Flowers & Plants — Design 49",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-49.webp"
-    },
-    {
-      "id": "flowers-plants-50",
-      "name": "Flowers & Plants — Design 50",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-50.webp"
-    },
-    {
-      "id": "flowers-plants-51",
-      "name": "Flowers & Plants — Design 51",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-51.webp"
-    },
-    {
-      "id": "flowers-plants-52",
-      "name": "Flowers & Plants — Design 52",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-52.webp"
-    },
-    {
-      "id": "flowers-plants-53",
-      "name": "Flowers & Plants — Design 53",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-53.webp"
-    },
-    {
-      "id": "flowers-plants-54",
-      "name": "Flowers & Plants — Design 54",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-54.webp"
-    },
-    {
-      "id": "flowers-plants-55",
-      "name": "Flowers & Plants — Design 55",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-55.webp"
-    },
-    {
-      "id": "flowers-plants-56",
-      "name": "Flowers & Plants — Design 56",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-56.webp"
-    },
-    {
-      "id": "flowers-plants-57",
-      "name": "Flowers & Plants — Design 57",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-57.webp"
-    },
-    {
-      "id": "flowers-plants-58",
-      "name": "Flowers & Plants — Design 58",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-58.webp"
-    },
-    {
-      "id": "flowers-plants-59",
-      "name": "Flowers & Plants — Design 59",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-59.webp"
-    },
-    {
-      "id": "flowers-plants-60",
-      "name": "Flowers & Plants — Design 60",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-60.webp"
-    },
-    {
-      "id": "flowers-plants-61",
-      "name": "Flowers & Plants — Design 61",
-      "category": "Flowers & Plants",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/flowers-plants-61.webp"
-    },
-    {
-      "id": "flowers-plants-62",
-      "name": "Flowers & Plants — Design 62",
+      "id": "blush-rose-heart-planter",
+      "name": "Blush Rose Heart Planter",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-62.webp"
+      "image": "assets/products/flowers-plants-83.webp",
+      "images": [
+        "assets/products/flowers-plants-83.webp",
+        "assets/products/flowers-plants-84.webp",
+        "assets/products/flowers-plants-92.webp",
+        "assets/products/flowers-plants-93.webp",
+        "assets/products/flowers-plants-94.webp"
+      ]
     },
     {
-      "id": "flowers-plants-63",
-      "name": "Flowers & Plants — Design 63",
+      "id": "blush-rose-stems",
+      "name": "Blush Rose Stems",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-63.webp"
+      "image": "assets/products/flowers-plants-13.webp",
+      "images": [
+        "assets/products/flowers-plants-13.webp",
+        "assets/products/flowers-plants-14.webp",
+        "assets/products/flowers-plants-15.webp",
+        "assets/products/flowers-plants-16.webp"
+      ]
     },
     {
-      "id": "flowers-plants-64",
-      "name": "Flowers & Plants — Design 64",
+      "id": "daisy-pot-duo",
+      "name": "Daisy Pot Duo",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-64.webp"
+      "image": "assets/products/flowers-plants-08.webp",
+      "images": [
+        "assets/products/flowers-plants-08.webp",
+        "assets/products/flowers-plants-09.webp"
+      ]
     },
     {
-      "id": "flowers-plants-65",
-      "name": "Flowers & Plants — Design 65",
+      "id": "gift-wrapped-planters",
+      "name": "Gift-wrapped Planters",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-65.webp"
+      "image": "assets/products/flowers-plants-71.webp",
+      "images": [
+        "assets/products/flowers-plants-71.webp",
+        "assets/products/flowers-plants-72.webp",
+        "assets/products/flowers-plants-76.webp",
+        "assets/products/flowers-plants-77.webp"
+      ]
     },
     {
-      "id": "flowers-plants-66",
-      "name": "Flowers & Plants — Design 66",
+      "id": "hanging-tulip-pair",
+      "name": "Hanging Tulip Pair",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-66.webp"
+      "image": "assets/products/flowers-plants-50.webp",
+      "images": [
+        "assets/products/flowers-plants-50.webp",
+        "assets/products/flowers-plants-51.webp"
+      ]
     },
     {
-      "id": "flowers-plants-67",
-      "name": "Flowers & Plants — Design 67",
+      "id": "ivory-lily-pots",
+      "name": "Ivory Lily Pots",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-67.webp"
+      "image": "assets/products/flowers-plants-87.webp",
+      "images": [
+        "assets/products/flowers-plants-87.webp",
+        "assets/products/flowers-plants-88.webp"
+      ]
     },
     {
-      "id": "flowers-plants-68",
-      "name": "Flowers & Plants — Design 68",
+      "id": "lavender-spray-stems",
+      "name": "Lavender Spray Stems",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-68.webp"
+      "image": "assets/products/flowers-plants-29.webp",
+      "images": [
+        "assets/products/flowers-plants-29.webp",
+        "assets/products/flowers-plants-40.webp",
+        "assets/products/flowers-plants-41.webp"
+      ]
     },
     {
-      "id": "flowers-plants-69",
-      "name": "Flowers & Plants — Design 69",
+      "id": "lily-tulip-mixed-vase",
+      "name": "Lily & Tulip Mixed Vase",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-69.webp"
+      "image": "assets/products/flowers-plants-52.webp",
+      "images": [
+        "assets/products/flowers-plants-52.webp",
+        "assets/products/flowers-plants-53.webp",
+        "assets/products/flowers-plants-54.webp"
+      ]
     },
     {
-      "id": "flowers-plants-70",
-      "name": "Flowers & Plants — Design 70",
+      "id": "lily-planter",
+      "name": "Lily Planter",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-70.webp"
+      "image": "assets/products/flowers-plants-63.webp",
+      "images": [
+        "assets/products/flowers-plants-63.webp",
+        "assets/products/flowers-plants-64.webp"
+      ]
     },
     {
-      "id": "flowers-plants-71",
-      "name": "Flowers & Plants — Design 71",
+      "id": "mini-planter-collection",
+      "name": "Mini Planter Collection",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-71.webp"
+      "image": "assets/products/flowers-plants-70.webp",
+      "images": [
+        "assets/products/flowers-plants-70.webp",
+        "assets/products/flowers-plants-78.webp",
+        "assets/products/flowers-plants-79.webp"
+      ]
     },
     {
-      "id": "flowers-plants-72",
-      "name": "Flowers & Plants — Design 72",
+      "id": "mint-lily-planter",
+      "name": "Mint Lily Planter",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-72.webp"
+      "image": "assets/products/flowers-plants-61.webp",
+      "images": [
+        "assets/products/flowers-plants-61.webp",
+        "assets/products/flowers-plants-62.webp"
+      ]
     },
     {
-      "id": "flowers-plants-73",
-      "name": "Flowers & Plants — Design 73",
+      "id": "peach-frangipani-stems",
+      "name": "Peach Frangipani Stems",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-73.webp"
+      "image": "assets/products/flowers-plants-22.webp",
+      "images": [
+        "assets/products/flowers-plants-22.webp",
+        "assets/products/flowers-plants-23.webp",
+        "assets/products/flowers-plants-30.webp"
+      ]
     },
     {
-      "id": "flowers-plants-74",
-      "name": "Flowers & Plants — Design 74",
+      "id": "peach-lily-vase",
+      "name": "Peach Lily Vase",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-74.webp"
+      "image": "assets/products/flowers-plants-44.webp",
+      "images": [
+        "assets/products/flowers-plants-44.webp",
+        "assets/products/flowers-plants-45.webp",
+        "assets/products/flowers-plants-46.webp",
+        "assets/products/flowers-plants-47.webp"
+      ]
     },
     {
-      "id": "flowers-plants-75",
-      "name": "Flowers & Plants — Design 75",
+      "id": "peach-tulip-pots",
+      "name": "Peach Tulip Pots",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-75.webp"
+      "image": "assets/products/flowers-plants-80.webp",
+      "images": [
+        "assets/products/flowers-plants-80.webp",
+        "assets/products/flowers-plants-81.webp",
+        "assets/products/flowers-plants-82.webp"
+      ]
     },
     {
-      "id": "flowers-plants-76",
-      "name": "Flowers & Plants — Design 76",
+      "id": "peach-tulip-vase",
+      "name": "Peach Tulip Vase",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-76.webp"
+      "image": "assets/products/flowers-plants-48.webp",
+      "images": [
+        "assets/products/flowers-plants-48.webp",
+        "assets/products/flowers-plants-49.webp"
+      ]
     },
     {
-      "id": "flowers-plants-77",
-      "name": "Flowers & Plants — Design 77",
+      "id": "pink-blue-tulip-pots",
+      "name": "Pink & Blue Tulip Pots",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-77.webp"
+      "image": "assets/products/flowers-plants-05.webp",
+      "images": [
+        "assets/products/flowers-plants-05.webp"
+      ]
     },
     {
-      "id": "flowers-plants-78",
-      "name": "Flowers & Plants — Design 78",
+      "id": "pink-daisy-pots",
+      "name": "Pink Daisy Pots",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-78.webp"
+      "image": "assets/products/flowers-plants-85.webp",
+      "images": [
+        "assets/products/flowers-plants-85.webp",
+        "assets/products/flowers-plants-86.webp"
+      ]
     },
     {
-      "id": "flowers-plants-79",
-      "name": "Flowers & Plants — Design 79",
+      "id": "pink-lily-flat-lay",
+      "name": "Pink Lily Flat Lay",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-79.webp"
+      "image": "assets/products/flowers-plants-55.webp",
+      "images": [
+        "assets/products/flowers-plants-55.webp"
+      ]
     },
     {
-      "id": "flowers-plants-80",
-      "name": "Flowers & Plants — Design 80",
+      "id": "pink-lily-planter",
+      "name": "Pink Lily Planter",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-80.webp"
+      "image": "assets/products/flowers-plants-59.webp",
+      "images": [
+        "assets/products/flowers-plants-59.webp",
+        "assets/products/flowers-plants-60.webp"
+      ]
     },
     {
-      "id": "flowers-plants-81",
-      "name": "Flowers & Plants — Design 81",
+      "id": "pink-lily-stems",
+      "name": "Pink Lily Stems",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-81.webp"
+      "image": "assets/products/flowers-plants-17.webp",
+      "images": [
+        "assets/products/flowers-plants-17.webp",
+        "assets/products/flowers-plants-18.webp",
+        "assets/products/flowers-plants-19.webp",
+        "assets/products/flowers-plants-20.webp",
+        "assets/products/flowers-plants-21.webp"
+      ]
     },
     {
-      "id": "flowers-plants-82",
-      "name": "Flowers & Plants — Design 82",
+      "id": "pink-roses-in-ceramic-vase",
+      "name": "Pink Roses in Ceramic Vase",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-82.webp"
+      "image": "assets/products/flowers-plants-36.webp",
+      "images": [
+        "assets/products/flowers-plants-36.webp",
+        "assets/products/flowers-plants-37.webp",
+        "assets/products/flowers-plants-38.webp"
+      ]
     },
     {
-      "id": "flowers-plants-83",
-      "name": "Flowers & Plants — Design 83",
+      "id": "planter-shelf-collection",
+      "name": "Planter Shelf Collection",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-83.webp"
+      "image": "assets/products/flowers-plants-95.webp",
+      "images": [
+        "assets/products/flowers-plants-95.webp"
+      ]
     },
     {
-      "id": "flowers-plants-84",
-      "name": "Flowers & Plants — Design 84",
+      "id": "purple-tulip-pot",
+      "name": "Purple Tulip Pot",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-84.webp"
+      "image": "assets/products/flowers-plants-01.webp",
+      "images": [
+        "assets/products/flowers-plants-01.webp",
+        "assets/products/flowers-plants-02.webp",
+        "assets/products/flowers-plants-06.webp",
+        "assets/products/flowers-plants-07.webp"
+      ]
     },
     {
-      "id": "flowers-plants-85",
-      "name": "Flowers & Plants — Design 85",
+      "id": "red-white-rose-arrangement",
+      "name": "Red & White Rose Arrangement",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-85.webp"
+      "image": "assets/products/flowers-plants-10.webp",
+      "images": [
+        "assets/products/flowers-plants-10.webp",
+        "assets/products/flowers-plants-11.webp",
+        "assets/products/flowers-plants-12.webp"
+      ]
     },
     {
-      "id": "flowers-plants-86",
-      "name": "Flowers & Plants — Design 86",
+      "id": "red-heart-planter-pair",
+      "name": "Red Heart Planter Pair",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-86.webp"
+      "image": "assets/products/flowers-plants-73.webp",
+      "images": [
+        "assets/products/flowers-plants-73.webp",
+        "assets/products/flowers-plants-74.webp",
+        "assets/products/flowers-plants-75.webp"
+      ]
     },
     {
-      "id": "flowers-plants-87",
-      "name": "Flowers & Plants — Design 87",
+      "id": "red-rose-pot-pair",
+      "name": "Red Rose Pot Pair",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-87.webp"
+      "image": "assets/products/flowers-plants-03.webp",
+      "images": [
+        "assets/products/flowers-plants-03.webp"
+      ]
     },
     {
-      "id": "flowers-plants-88",
-      "name": "Flowers & Plants — Design 88",
+      "id": "red-tulip-motifs",
+      "name": "Red Tulip Motifs",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-88.webp"
+      "image": "assets/products/flowers-plants-65.webp",
+      "images": [
+        "assets/products/flowers-plants-65.webp",
+        "assets/products/flowers-plants-66.webp",
+        "assets/products/flowers-plants-67.webp",
+        "assets/products/flowers-plants-68.webp",
+        "assets/products/flowers-plants-69.webp"
+      ]
     },
     {
-      "id": "flowers-plants-89",
-      "name": "Flowers & Plants — Design 89",
+      "id": "rose-stems-in-vase",
+      "name": "Rose Stems in Vase",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-89.webp"
+      "image": "assets/products/flowers-plants-31.webp",
+      "images": [
+        "assets/products/flowers-plants-31.webp",
+        "assets/products/flowers-plants-34.webp",
+        "assets/products/flowers-plants-35.webp",
+        "assets/products/flowers-plants-42.webp",
+        "assets/products/flowers-plants-43.webp"
+      ]
     },
     {
-      "id": "flowers-plants-90",
-      "name": "Flowers & Plants — Design 90",
+      "id": "smiley-sunflower-pot",
+      "name": "Smiley Sunflower Pot",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-90.webp"
+      "image": "assets/products/flowers-plants-56.webp",
+      "images": [
+        "assets/products/flowers-plants-56.webp",
+        "assets/products/flowers-plants-57.webp",
+        "assets/products/flowers-plants-58.webp"
+      ]
     },
     {
-      "id": "flowers-plants-91",
-      "name": "Flowers & Plants — Design 91",
+      "id": "studio-flower-display",
+      "name": "Studio Flower Display",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-91.webp"
+      "image": "assets/products/flowers-plants-90.webp",
+      "images": [
+        "assets/products/flowers-plants-90.webp",
+        "assets/products/flowers-plants-91.webp"
+      ]
     },
     {
-      "id": "flowers-plants-92",
-      "name": "Flowers & Plants — Design 92",
+      "id": "sunflower-planter",
+      "name": "Sunflower Planter",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-92.webp"
+      "image": "assets/products/flowers-plants-89.webp",
+      "images": [
+        "assets/products/flowers-plants-89.webp",
+        "assets/products/flowers-plants-96.webp"
+      ]
     },
     {
-      "id": "flowers-plants-93",
-      "name": "Flowers & Plants — Design 93",
+      "id": "tulip-stems",
+      "name": "Tulip Stems",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-93.webp"
+      "image": "assets/products/flowers-plants-24.webp",
+      "images": [
+        "assets/products/flowers-plants-24.webp",
+        "assets/products/flowers-plants-25.webp",
+        "assets/products/flowers-plants-26.webp",
+        "assets/products/flowers-plants-32.webp",
+        "assets/products/flowers-plants-33.webp"
+      ]
     },
     {
-      "id": "flowers-plants-94",
-      "name": "Flowers & Plants — Design 94",
+      "id": "white-blossom-spray",
+      "name": "White Blossom Spray",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-94.webp"
+      "image": "assets/products/flowers-plants-27.webp",
+      "images": [
+        "assets/products/flowers-plants-27.webp",
+        "assets/products/flowers-plants-28.webp"
+      ]
     },
     {
-      "id": "flowers-plants-95",
-      "name": "Flowers & Plants — Design 95",
+      "id": "white-blossoms-in-vase",
+      "name": "White Blossoms in Vase",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-95.webp"
+      "image": "assets/products/flowers-plants-39.webp",
+      "images": [
+        "assets/products/flowers-plants-39.webp"
+      ]
     },
     {
-      "id": "flowers-plants-96",
-      "name": "Flowers & Plants — Design 96",
+      "id": "white-daisy-planter",
+      "name": "White Daisy Planter",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-96.webp"
+      "image": "assets/products/flowers-plants-97.webp",
+      "images": [
+        "assets/products/flowers-plants-97.webp"
+      ]
     },
     {
-      "id": "flowers-plants-97",
-      "name": "Flowers & Plants — Design 97",
+      "id": "yellow-rose-pots",
+      "name": "Yellow Rose Pots",
       "category": "Flowers & Plants",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted forever flowers on craft stems, arranged in a handmade pot or vase.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/flowers-plants-97.webp"
+      "image": "assets/products/flowers-plants-04.webp",
+      "images": [
+        "assets/products/flowers-plants-04.webp"
+      ]
     },
     {
-      "id": "hairbands-01",
-      "name": "Hairbands — Design 01",
+      "id": "beaded-flower-hair-clips",
+      "name": "Beaded Flower Hair Clips",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-01.webp"
+      "image": "assets/products/hairbands-01.webp",
+      "images": [
+        "assets/products/hairbands-01.webp",
+        "assets/products/hairbands-02.webp",
+        "assets/products/hairbands-03.webp",
+        "assets/products/hairbands-04.webp"
+      ]
     },
     {
-      "id": "hairbands-02",
-      "name": "Hairbands — Design 02",
+      "id": "bird-charm-hairband",
+      "name": "Bird Charm Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-02.webp"
+      "image": "assets/products/hairbands-24.webp",
+      "images": [
+        "assets/products/hairbands-24.webp"
+      ]
     },
     {
-      "id": "hairbands-03",
-      "name": "Hairbands — Design 03",
+      "id": "butterfly-hairband-collection",
+      "name": "Butterfly Hairband Collection",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-03.webp"
+      "image": "assets/products/hairbands-32.webp",
+      "images": [
+        "assets/products/hairbands-32.webp"
+      ]
     },
     {
-      "id": "hairbands-04",
-      "name": "Hairbands — Design 04",
+      "id": "green-vine-hairband",
+      "name": "Green Vine Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-04.webp"
+      "image": "assets/products/hairbands-17.webp",
+      "images": [
+        "assets/products/hairbands-17.webp"
+      ]
     },
     {
-      "id": "hairbands-05",
-      "name": "Hairbands — Design 05",
+      "id": "orange-butterfly-hairband",
+      "name": "Orange Butterfly Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-05.webp"
+      "image": "assets/products/hairbands-20.webp",
+      "images": [
+        "assets/products/hairbands-20.webp",
+        "assets/products/hairbands-21.webp",
+        "assets/products/hairbands-28.webp",
+        "assets/products/hairbands-29.webp"
+      ]
     },
     {
-      "id": "hairbands-06",
-      "name": "Hairbands — Design 06",
+      "id": "peach-blossom-hairband",
+      "name": "Peach Blossom Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-06.webp"
+      "image": "assets/products/hairbands-07.webp",
+      "images": [
+        "assets/products/hairbands-07.webp",
+        "assets/products/hairbands-08.webp",
+        "assets/products/hairbands-15.webp"
+      ]
     },
     {
-      "id": "hairbands-07",
-      "name": "Hairbands — Design 07",
+      "id": "pink-butterfly-hairband",
+      "name": "Pink Butterfly Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-07.webp"
+      "image": "assets/products/hairbands-09.webp",
+      "images": [
+        "assets/products/hairbands-09.webp",
+        "assets/products/hairbands-22.webp",
+        "assets/products/hairbands-23.webp",
+        "assets/products/hairbands-25.webp",
+        "assets/products/hairbands-26.webp",
+        "assets/products/hairbands-27.webp"
+      ]
     },
     {
-      "id": "hairbands-08",
-      "name": "Hairbands — Design 08",
+      "id": "purple-blossom-hairband",
+      "name": "Purple Blossom Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-08.webp"
+      "image": "assets/products/hairbands-18.webp",
+      "images": [
+        "assets/products/hairbands-18.webp",
+        "assets/products/hairbands-19.webp"
+      ]
     },
     {
-      "id": "hairbands-09",
-      "name": "Hairbands — Design 09",
+      "id": "purple-lace-hairband",
+      "name": "Purple Lace Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-09.webp"
+      "image": "assets/products/hairbands-30.webp",
+      "images": [
+        "assets/products/hairbands-30.webp",
+        "assets/products/hairbands-31.webp"
+      ]
     },
     {
-      "id": "hairbands-10",
-      "name": "Hairbands — Design 10",
+      "id": "purple-tassel-hairband",
+      "name": "Purple Tassel Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-10.webp"
+      "image": "assets/products/hairbands-05.webp",
+      "images": [
+        "assets/products/hairbands-05.webp",
+        "assets/products/hairbands-06.webp"
+      ]
     },
     {
-      "id": "hairbands-11",
-      "name": "Hairbands — Design 11",
+      "id": "red-bead-hairband",
+      "name": "Red Bead Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-11.webp"
+      "image": "assets/products/hairbands-10.webp",
+      "images": [
+        "assets/products/hairbands-10.webp",
+        "assets/products/hairbands-16.webp"
+      ]
     },
     {
-      "id": "hairbands-12",
-      "name": "Hairbands — Design 12",
+      "id": "red-flower-hairband",
+      "name": "Red Flower Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-12.webp"
+      "image": "assets/products/hairbands-11.webp",
+      "images": [
+        "assets/products/hairbands-11.webp",
+        "assets/products/hairbands-12.webp"
+      ]
     },
     {
-      "id": "hairbands-13",
-      "name": "Hairbands — Design 13",
+      "id": "red-pearl-flower-hairband",
+      "name": "Red Pearl Flower Hairband",
       "category": "Hairbands",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hairbands-13.webp"
+      "image": "assets/products/hairbands-13.webp",
+      "images": [
+        "assets/products/hairbands-13.webp",
+        "assets/products/hairbands-14.webp"
+      ]
     },
     {
-      "id": "hairbands-14",
-      "name": "Hairbands — Design 14",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-14.webp"
-    },
-    {
-      "id": "hairbands-15",
-      "name": "Hairbands — Design 15",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-15.webp"
-    },
-    {
-      "id": "hairbands-16",
-      "name": "Hairbands — Design 16",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-16.webp"
-    },
-    {
-      "id": "hairbands-17",
-      "name": "Hairbands — Design 17",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-17.webp"
-    },
-    {
-      "id": "hairbands-18",
-      "name": "Hairbands — Design 18",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-18.webp"
-    },
-    {
-      "id": "hairbands-19",
-      "name": "Hairbands — Design 19",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-19.webp"
-    },
-    {
-      "id": "hairbands-20",
-      "name": "Hairbands — Design 20",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-20.webp"
-    },
-    {
-      "id": "hairbands-21",
-      "name": "Hairbands — Design 21",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-21.webp"
-    },
-    {
-      "id": "hairbands-22",
-      "name": "Hairbands — Design 22",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-22.webp"
-    },
-    {
-      "id": "hairbands-23",
-      "name": "Hairbands — Design 23",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-23.webp"
-    },
-    {
-      "id": "hairbands-24",
-      "name": "Hairbands — Design 24",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-24.webp"
-    },
-    {
-      "id": "hairbands-25",
-      "name": "Hairbands — Design 25",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-25.webp"
-    },
-    {
-      "id": "hairbands-26",
-      "name": "Hairbands — Design 26",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-26.webp"
-    },
-    {
-      "id": "hairbands-27",
-      "name": "Hairbands — Design 27",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-27.webp"
-    },
-    {
-      "id": "hairbands-28",
-      "name": "Hairbands — Design 28",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-28.webp"
-    },
-    {
-      "id": "hairbands-29",
-      "name": "Hairbands — Design 29",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-29.webp"
-    },
-    {
-      "id": "hairbands-30",
-      "name": "Hairbands — Design 30",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-30.webp"
-    },
-    {
-      "id": "hairbands-31",
-      "name": "Hairbands — Design 31",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-31.webp"
-    },
-    {
-      "id": "hairbands-32",
-      "name": "Hairbands — Design 32",
-      "category": "Hairbands",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted floral hairband, stitched onto a comfortable band and made to order.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hairbands-32.webp"
-    },
-    {
-      "id": "hair-accessories-01",
-      "name": "Hair Accessories — Design 01",
+      "id": "butterfly-star-clips",
+      "name": "Butterfly & Star Clips",
       "category": "Hair Accessories",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hair-accessories-01.webp"
+      "image": "assets/products/hair-accessories-05.webp",
+      "images": [
+        "assets/products/hair-accessories-05.webp"
+      ]
     },
     {
-      "id": "hair-accessories-02",
-      "name": "Hair Accessories — Design 02",
+      "id": "floral-claw-clip-set",
+      "name": "Floral Claw Clip Set",
       "category": "Hair Accessories",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hair-accessories-02.webp"
+      "image": "assets/products/hair-accessories-01.webp",
+      "images": [
+        "assets/products/hair-accessories-01.webp",
+        "assets/products/hair-accessories-02.webp"
+      ]
     },
     {
-      "id": "hair-accessories-03",
-      "name": "Hair Accessories — Design 03",
+      "id": "flower-snap-clip-set",
+      "name": "Flower Snap Clip Set",
       "category": "Hair Accessories",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hair-accessories-03.webp"
+      "image": "assets/products/hair-accessories-09.webp",
+      "images": [
+        "assets/products/hair-accessories-09.webp",
+        "assets/products/hair-accessories-10.webp"
+      ]
     },
     {
-      "id": "hair-accessories-04",
-      "name": "Hair Accessories — Design 04",
+      "id": "flower-snap-clips",
+      "name": "Flower Snap Clips",
       "category": "Hair Accessories",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hair-accessories-04.webp"
+      "image": "assets/products/hair-accessories-04.webp",
+      "images": [
+        "assets/products/hair-accessories-04.webp"
+      ]
     },
     {
-      "id": "hair-accessories-05",
-      "name": "Hair Accessories — Design 05",
+      "id": "pastel-heart-clip-set",
+      "name": "Pastel Heart Clip Set",
       "category": "Hair Accessories",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hair-accessories-05.webp"
+      "image": "assets/products/hair-accessories-03.webp",
+      "images": [
+        "assets/products/hair-accessories-03.webp"
+      ]
     },
     {
-      "id": "hair-accessories-06",
-      "name": "Hair Accessories — Design 06",
+      "id": "rainbow-butterfly-clip-set",
+      "name": "Rainbow Butterfly Clip Set",
       "category": "Hair Accessories",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/hair-accessories-06.webp"
+      "image": "assets/products/hair-accessories-06.webp",
+      "images": [
+        "assets/products/hair-accessories-06.webp",
+        "assets/products/hair-accessories-07.webp",
+        "assets/products/hair-accessories-08.webp"
+      ]
     },
     {
-      "id": "hair-accessories-07",
-      "name": "Hair Accessories — Design 07",
-      "category": "Hair Accessories",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hair-accessories-07.webp"
-    },
-    {
-      "id": "hair-accessories-08",
-      "name": "Hair Accessories — Design 08",
-      "category": "Hair Accessories",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hair-accessories-08.webp"
-    },
-    {
-      "id": "hair-accessories-09",
-      "name": "Hair Accessories — Design 09",
-      "category": "Hair Accessories",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hair-accessories-09.webp"
-    },
-    {
-      "id": "hair-accessories-10",
-      "name": "Hair Accessories — Design 10",
-      "category": "Hair Accessories",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted hair accessories — small floral pieces mounted on clips and ties.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/hair-accessories-10.webp"
-    },
-    {
-      "id": "purses-01",
-      "name": "Purses — Design 01",
+      "id": "blue-rose-round-purse",
+      "name": "Blue Rose Round Purse",
       "category": "Purses",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/purses-01.webp"
+      "image": "assets/products/purses-06.webp",
+      "images": [
+        "assets/products/purses-06.webp",
+        "assets/products/purses-10.webp"
+      ]
     },
     {
-      "id": "purses-02",
-      "name": "Purses — Design 02",
+      "id": "denim-blue-round-purse",
+      "name": "Denim Blue Round Purse",
       "category": "Purses",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/purses-02.webp"
+      "image": "assets/products/purses-07.webp",
+      "images": [
+        "assets/products/purses-07.webp",
+        "assets/products/purses-08.webp",
+        "assets/products/purses-09.webp"
+      ]
     },
     {
-      "id": "purses-03",
-      "name": "Purses — Design 03",
+      "id": "pink-evil-eye-sling-bag",
+      "name": "Pink Evil Eye Sling Bag",
       "category": "Purses",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/purses-03.webp"
+      "image": "assets/products/purses-03.webp",
+      "images": [
+        "assets/products/purses-03.webp",
+        "assets/products/purses-04.webp",
+        "assets/products/purses-05.webp"
+      ]
     },
     {
-      "id": "purses-04",
-      "name": "Purses — Design 04",
+      "id": "silver-mini-coin-purse",
+      "name": "Silver Mini Coin Purse",
       "category": "Purses",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/purses-04.webp"
+      "image": "assets/products/purses-01.webp",
+      "images": [
+        "assets/products/purses-01.webp",
+        "assets/products/purses-02.webp"
+      ]
     },
     {
-      "id": "purses-05",
-      "name": "Purses — Design 05",
-      "category": "Purses",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/purses-05.webp"
-    },
-    {
-      "id": "purses-06",
-      "name": "Purses — Design 06",
-      "category": "Purses",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/purses-06.webp"
-    },
-    {
-      "id": "purses-07",
-      "name": "Purses — Design 07",
-      "category": "Purses",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/purses-07.webp"
-    },
-    {
-      "id": "purses-08",
-      "name": "Purses — Design 08",
-      "category": "Purses",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/purses-08.webp"
-    },
-    {
-      "id": "purses-09",
-      "name": "Purses — Design 09",
-      "category": "Purses",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/purses-09.webp"
-    },
-    {
-      "id": "purses-10",
-      "name": "Purses — Design 10",
-      "category": "Purses",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted purse worked in soft yarn and finished with a matching strap or chain.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/purses-10.webp"
-    },
-    {
-      "id": "keychains-01",
-      "name": "Keychains — Design 01",
+      "id": "cherry-daisy-keychain-set",
+      "name": "Cherry & Daisy Keychain Set",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-01.webp"
+      "image": "assets/products/keychains-05.webp",
+      "images": [
+        "assets/products/keychains-05.webp",
+        "assets/products/keychains-06.webp",
+        "assets/products/keychains-07.webp"
+      ]
     },
     {
-      "id": "keychains-02",
-      "name": "Keychains — Design 02",
+      "id": "cherry-keychain",
+      "name": "Cherry Keychain",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-02.webp"
+      "image": "assets/products/keychains-08.webp",
+      "images": [
+        "assets/products/keychains-08.webp",
+        "assets/products/keychains-09.webp",
+        "assets/products/keychains-10.webp"
+      ]
     },
     {
-      "id": "keychains-03",
-      "name": "Keychains — Design 03",
+      "id": "donut-keychain-collection",
+      "name": "Donut Keychain Collection",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-03.webp"
+      "image": "assets/products/keychains-19.webp",
+      "images": [
+        "assets/products/keychains-19.webp",
+        "assets/products/keychains-20.webp"
+      ]
     },
     {
-      "id": "keychains-04",
-      "name": "Keychains — Design 04",
+      "id": "donut-keychain-trio",
+      "name": "Donut Keychain Trio",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-04.webp"
+      "image": "assets/products/keychains-13.webp",
+      "images": [
+        "assets/products/keychains-13.webp",
+        "assets/products/keychains-14.webp",
+        "assets/products/keychains-17.webp",
+        "assets/products/keychains-18.webp"
+      ]
     },
     {
-      "id": "keychains-05",
-      "name": "Keychains — Design 05",
+      "id": "evil-eye-initial-keychain",
+      "name": "Evil Eye Initial Keychain",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-05.webp"
+      "image": "assets/products/keychains-11.webp",
+      "images": [
+        "assets/products/keychains-11.webp",
+        "assets/products/keychains-12.webp"
+      ]
     },
     {
-      "id": "keychains-06",
-      "name": "Keychains — Design 06",
+      "id": "little-bunny-keychains",
+      "name": "Little Bunny Keychains",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-06.webp"
+      "image": "assets/products/keychains-04.webp",
+      "images": [
+        "assets/products/keychains-04.webp"
+      ]
     },
     {
-      "id": "keychains-07",
-      "name": "Keychains — Design 07",
+      "id": "little-fish-keychain",
+      "name": "Little Fish Keychain",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-07.webp"
+      "image": "assets/products/keychains-15.webp",
+      "images": [
+        "assets/products/keychains-15.webp",
+        "assets/products/keychains-16.webp"
+      ]
     },
     {
-      "id": "keychains-08",
-      "name": "Keychains — Design 08",
+      "id": "rainbow-cloud-keychain",
+      "name": "Rainbow Cloud Keychain",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-08.webp"
+      "image": "assets/products/keychains-01.webp",
+      "images": [
+        "assets/products/keychains-01.webp",
+        "assets/products/keychains-02.webp"
+      ]
     },
     {
-      "id": "keychains-09",
-      "name": "Keychains — Design 09",
+      "id": "sunflower-keychain-set",
+      "name": "Sunflower Keychain Set",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-09.webp"
+      "image": "assets/products/keychains-03.webp",
+      "images": [
+        "assets/products/keychains-03.webp"
+      ]
     },
     {
-      "id": "keychains-10",
-      "name": "Keychains — Design 10",
+      "id": "sunflower-tassel-keychain",
+      "name": "Sunflower Tassel Keychain",
       "category": "Keychains",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/keychains-10.webp"
+      "image": "assets/products/keychains-21.webp",
+      "images": [
+        "assets/products/keychains-21.webp"
+      ]
     },
     {
-      "id": "keychains-11",
-      "name": "Keychains — Design 11",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-11.webp"
-    },
-    {
-      "id": "keychains-12",
-      "name": "Keychains — Design 12",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-12.webp"
-    },
-    {
-      "id": "keychains-13",
-      "name": "Keychains — Design 13",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-13.webp"
-    },
-    {
-      "id": "keychains-14",
-      "name": "Keychains — Design 14",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-14.webp"
-    },
-    {
-      "id": "keychains-15",
-      "name": "Keychains — Design 15",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-15.webp"
-    },
-    {
-      "id": "keychains-16",
-      "name": "Keychains — Design 16",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-16.webp"
-    },
-    {
-      "id": "keychains-17",
-      "name": "Keychains — Design 17",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-17.webp"
-    },
-    {
-      "id": "keychains-18",
-      "name": "Keychains — Design 18",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-18.webp"
-    },
-    {
-      "id": "keychains-19",
-      "name": "Keychains — Design 19",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-19.webp"
-    },
-    {
-      "id": "keychains-20",
-      "name": "Keychains — Design 20",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-20.webp"
-    },
-    {
-      "id": "keychains-21",
-      "name": "Keychains — Design 21",
-      "category": "Keychains",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keychain charm finished with a metal ring — a small, cheerful gift.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/keychains-21.webp"
-    },
-    {
-      "id": "jewellery-01",
-      "name": "Jewellery — Design 01",
+      "id": "flower-drop-earrings",
+      "name": "Flower Drop Earrings",
       "category": "Jewellery",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted jewellery with thread flowers, beads and delicate metal findings.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/jewellery-01.webp"
+      "image": "assets/products/jewellery-03.webp",
+      "images": [
+        "assets/products/jewellery-03.webp",
+        "assets/products/jewellery-04.webp"
+      ]
     },
     {
-      "id": "jewellery-02",
-      "name": "Jewellery — Design 02",
+      "id": "packaged-flower-earrings",
+      "name": "Packaged Flower Earrings",
       "category": "Jewellery",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted jewellery with thread flowers, beads and delicate metal findings.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/jewellery-02.webp"
+      "image": "assets/products/jewellery-01.webp",
+      "images": [
+        "assets/products/jewellery-01.webp",
+        "assets/products/jewellery-02.webp"
+      ]
     },
     {
-      "id": "jewellery-03",
-      "name": "Jewellery — Design 03",
-      "category": "Jewellery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted jewellery with thread flowers, beads and delicate metal findings.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/jewellery-03.webp"
-    },
-    {
-      "id": "jewellery-04",
-      "name": "Jewellery — Design 04",
-      "category": "Jewellery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted jewellery with thread flowers, beads and delicate metal findings.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/jewellery-04.webp"
-    },
-    {
-      "id": "photo-frames-01",
-      "name": "Photo Frames — Design 01",
+      "id": "blush-blossom-frame",
+      "name": "Blush Blossom Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-01.webp"
+      "image": "assets/products/photo-frames-06.webp",
+      "images": [
+        "assets/products/photo-frames-06.webp"
+      ]
     },
     {
-      "id": "photo-frames-02",
-      "name": "Photo Frames — Design 02",
+      "id": "coral-garden-frame",
+      "name": "Coral Garden Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-02.webp"
+      "image": "assets/products/photo-frames-16.webp",
+      "images": [
+        "assets/products/photo-frames-16.webp"
+      ]
     },
     {
-      "id": "photo-frames-03",
-      "name": "Photo Frames — Design 03",
+      "id": "daisy-photo-frame",
+      "name": "Daisy Photo Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-03.webp"
+      "image": "assets/products/photo-frames-13.webp",
+      "images": [
+        "assets/products/photo-frames-13.webp"
+      ]
     },
     {
-      "id": "photo-frames-04",
-      "name": "Photo Frames — Design 04",
+      "id": "lilac-blossom-frame",
+      "name": "Lilac Blossom Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-04.webp"
+      "image": "assets/products/photo-frames-04.webp",
+      "images": [
+        "assets/products/photo-frames-04.webp",
+        "assets/products/photo-frames-05.webp"
+      ]
     },
     {
-      "id": "photo-frames-05",
-      "name": "Photo Frames — Design 05",
+      "id": "multicolour-flower-photo-frame",
+      "name": "Multicolour Flower Photo Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-05.webp"
+      "image": "assets/products/photo-frames-01.webp",
+      "images": [
+        "assets/products/photo-frames-01.webp"
+      ]
     },
     {
-      "id": "photo-frames-06",
-      "name": "Photo Frames — Design 06",
+      "id": "navy-blossom-frame",
+      "name": "Navy Blossom Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-06.webp"
+      "image": "assets/products/photo-frames-11.webp",
+      "images": [
+        "assets/products/photo-frames-11.webp",
+        "assets/products/photo-frames-14.webp"
+      ]
     },
     {
-      "id": "photo-frames-07",
-      "name": "Photo Frames — Design 07",
+      "id": "peach-blossom-black-frame",
+      "name": "Peach Blossom Black Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-07.webp"
+      "image": "assets/products/photo-frames-08.webp",
+      "images": [
+        "assets/products/photo-frames-08.webp",
+        "assets/products/photo-frames-09.webp"
+      ]
     },
     {
-      "id": "photo-frames-08",
-      "name": "Photo Frames — Design 08",
+      "id": "pink-bloom-mini-frame",
+      "name": "Pink Bloom Mini Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-08.webp"
+      "image": "assets/products/photo-frames-07.webp",
+      "images": [
+        "assets/products/photo-frames-07.webp"
+      ]
     },
     {
-      "id": "photo-frames-09",
-      "name": "Photo Frames — Design 09",
+      "id": "pink-rose-black-frame",
+      "name": "Pink Rose Black Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-09.webp"
+      "image": "assets/products/photo-frames-02.webp",
+      "images": [
+        "assets/products/photo-frames-02.webp"
+      ]
     },
     {
-      "id": "photo-frames-10",
-      "name": "Photo Frames — Design 10",
+      "id": "purple-bloom-white-frame",
+      "name": "Purple Bloom White Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-10.webp"
+      "image": "assets/products/photo-frames-10.webp",
+      "images": [
+        "assets/products/photo-frames-10.webp"
+      ]
     },
     {
-      "id": "photo-frames-11",
-      "name": "Photo Frames — Design 11",
+      "id": "red-yellow-bloom-frame",
+      "name": "Red & Yellow Bloom Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-11.webp"
+      "image": "assets/products/photo-frames-03.webp",
+      "images": [
+        "assets/products/photo-frames-03.webp"
+      ]
     },
     {
-      "id": "photo-frames-12",
-      "name": "Photo Frames — Design 12",
+      "id": "sunflower-photo-frame",
+      "name": "Sunflower Photo Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-12.webp"
+      "image": "assets/products/photo-frames-12.webp",
+      "images": [
+        "assets/products/photo-frames-12.webp"
+      ]
     },
     {
-      "id": "photo-frames-13",
-      "name": "Photo Frames — Design 13",
+      "id": "white-daisy-frame",
+      "name": "White Daisy Frame",
       "category": "Photo Frames",
       "price": 0,
       "shipDays": 0,
       "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/photo-frames-13.webp"
+      "image": "assets/products/photo-frames-15.webp",
+      "images": [
+        "assets/products/photo-frames-15.webp"
+      ]
     },
     {
-      "id": "photo-frames-14",
-      "name": "Photo Frames — Design 14",
-      "category": "Photo Frames",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/photo-frames-14.webp"
-    },
-    {
-      "id": "photo-frames-15",
-      "name": "Photo Frames — Design 15",
-      "category": "Photo Frames",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/photo-frames-15.webp"
-    },
-    {
-      "id": "photo-frames-16",
-      "name": "Photo Frames — Design 16",
-      "category": "Photo Frames",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A photo frame hand-decorated with crochet flowers and leaves for a favourite picture.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/photo-frames-16.webp"
-    },
-    {
-      "id": "stationery-01",
-      "name": "Stationery — Design 01",
+      "id": "cheerful-face-pencil-toppers",
+      "name": "Cheerful Face Pencil Toppers",
       "category": "Stationery",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/stationery-01.webp"
+      "image": "assets/products/stationery-04.webp",
+      "images": [
+        "assets/products/stationery-04.webp",
+        "assets/products/stationery-05.webp"
+      ]
     },
     {
-      "id": "stationery-02",
-      "name": "Stationery — Design 02",
+      "id": "dino-unicorn-pencil-toppers",
+      "name": "Dino & Unicorn Pencil Toppers",
       "category": "Stationery",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/stationery-02.webp"
+      "image": "assets/products/stationery-10.webp",
+      "images": [
+        "assets/products/stationery-10.webp"
+      ]
     },
     {
-      "id": "stationery-03",
-      "name": "Stationery — Design 03",
+      "id": "doll-pencil-toppers",
+      "name": "Doll Pencil Toppers",
       "category": "Stationery",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/stationery-03.webp"
+      "image": "assets/products/stationery-01.webp",
+      "images": [
+        "assets/products/stationery-01.webp",
+        "assets/products/stationery-02.webp",
+        "assets/products/stationery-03.webp"
+      ]
     },
     {
-      "id": "stationery-04",
-      "name": "Stationery — Design 04",
+      "id": "ice-cream-pencil-toppers",
+      "name": "Ice Cream Pencil Toppers",
       "category": "Stationery",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/stationery-04.webp"
+      "image": "assets/products/stationery-06.webp",
+      "images": [
+        "assets/products/stationery-06.webp",
+        "assets/products/stationery-11.webp"
+      ]
     },
     {
-      "id": "stationery-05",
-      "name": "Stationery — Design 05",
+      "id": "unicorn-pencil-toppers",
+      "name": "Unicorn Pencil Toppers",
       "category": "Stationery",
       "price": 0,
       "shipDays": 0,
       "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/stationery-05.webp"
+      "image": "assets/products/stationery-07.webp",
+      "images": [
+        "assets/products/stationery-07.webp",
+        "assets/products/stationery-08.webp",
+        "assets/products/stationery-09.webp"
+      ]
     },
     {
-      "id": "stationery-06",
-      "name": "Stationery — Design 06",
-      "category": "Stationery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/stationery-06.webp"
-    },
-    {
-      "id": "stationery-07",
-      "name": "Stationery — Design 07",
-      "category": "Stationery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/stationery-07.webp"
-    },
-    {
-      "id": "stationery-08",
-      "name": "Stationery — Design 08",
-      "category": "Stationery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/stationery-08.webp"
-    },
-    {
-      "id": "stationery-09",
-      "name": "Stationery — Design 09",
-      "category": "Stationery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/stationery-09.webp"
-    },
-    {
-      "id": "stationery-10",
-      "name": "Stationery — Design 10",
-      "category": "Stationery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/stationery-10.webp"
-    },
-    {
-      "id": "stationery-11",
-      "name": "Stationery — Design 11",
-      "category": "Stationery",
-      "price": 0,
-      "shipDays": 0,
-      "description": "Hand-crocheted pencil toppers and desk pieces, made to order in your colours.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/stationery-11.webp"
-    },
-    {
-      "id": "home-decor-01",
-      "name": "Home Décor — Design 01",
+      "id": "blossom-wind-chime",
+      "name": "Blossom Wind Chime",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-01.webp"
+      "image": "assets/products/home-decor-10.webp",
+      "images": [
+        "assets/products/home-decor-10.webp",
+        "assets/products/home-decor-11.webp",
+        "assets/products/home-decor-12.webp"
+      ]
     },
     {
-      "id": "home-decor-02",
-      "name": "Home Décor — Design 02",
+      "id": "blue-evil-eye-coasters",
+      "name": "Blue Evil Eye Coasters",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-02.webp"
+      "image": "assets/products/home-decor-06.webp",
+      "images": [
+        "assets/products/home-decor-06.webp",
+        "assets/products/home-decor-07.webp"
+      ]
     },
     {
-      "id": "home-decor-03",
-      "name": "Home Décor — Design 03",
+      "id": "cowrie-shell-mirror-mandala",
+      "name": "Cowrie Shell Mirror Mandala",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-03.webp"
+      "image": "assets/products/home-decor-01.webp",
+      "images": [
+        "assets/products/home-decor-01.webp",
+        "assets/products/home-decor-02.webp",
+        "assets/products/home-decor-03.webp"
+      ]
     },
     {
-      "id": "home-decor-04",
-      "name": "Home Décor — Design 04",
+      "id": "evil-eye-coaster-mix",
+      "name": "Evil Eye Coaster Mix",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-04.webp"
+      "image": "assets/products/home-decor-08.webp",
+      "images": [
+        "assets/products/home-decor-08.webp"
+      ]
     },
     {
-      "id": "home-decor-05",
-      "name": "Home Décor — Design 05",
+      "id": "gift-wrapped-flower-sets",
+      "name": "Gift-wrapped Flower Sets",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-05.webp"
+      "image": "assets/products/home-decor-13.webp",
+      "images": [
+        "assets/products/home-decor-13.webp"
+      ]
     },
     {
-      "id": "home-decor-06",
-      "name": "Home Décor — Design 06",
+      "id": "peach-tassel-hanging",
+      "name": "Peach Tassel Hanging",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-06.webp"
+      "image": "assets/products/home-decor-09.webp",
+      "images": [
+        "assets/products/home-decor-09.webp"
+      ]
     },
     {
-      "id": "home-decor-07",
-      "name": "Home Décor — Design 07",
+      "id": "photo-hoop-wall-hanging",
+      "name": "Photo Hoop Wall Hanging",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-07.webp"
+      "image": "assets/products/home-decor-14.webp",
+      "images": [
+        "assets/products/home-decor-14.webp"
+      ]
     },
     {
-      "id": "home-decor-08",
-      "name": "Home Décor — Design 08",
+      "id": "pink-evil-eye-coasters",
+      "name": "Pink Evil Eye Coasters",
       "category": "Home Décor",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/home-decor-08.webp"
+      "image": "assets/products/home-decor-04.webp",
+      "images": [
+        "assets/products/home-decor-04.webp",
+        "assets/products/home-decor-05.webp"
+      ]
     },
     {
-      "id": "home-decor-09",
-      "name": "Home Décor — Design 09",
-      "category": "Home Décor",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/home-decor-09.webp"
-    },
-    {
-      "id": "home-decor-10",
-      "name": "Home Décor — Design 10",
-      "category": "Home Décor",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/home-decor-10.webp"
-    },
-    {
-      "id": "home-decor-11",
-      "name": "Home Décor — Design 11",
-      "category": "Home Décor",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/home-decor-11.webp"
-    },
-    {
-      "id": "home-decor-12",
-      "name": "Home Décor — Design 12",
-      "category": "Home Décor",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/home-decor-12.webp"
-    },
-    {
-      "id": "home-decor-13",
-      "name": "Home Décor — Design 13",
-      "category": "Home Décor",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/home-decor-13.webp"
-    },
-    {
-      "id": "home-decor-14",
-      "name": "Home Décor — Design 14",
-      "category": "Home Décor",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted décor piece for the home, worked and finished entirely by hand.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/home-decor-14.webp"
-    },
-    {
-      "id": "gifts-keepsakes-01",
-      "name": "Gifts & Keepsakes — Design 01",
+      "id": "handmade-gift-box",
+      "name": "Handmade Gift Box",
       "category": "Gifts & Keepsakes",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keepsake, packaged and finished by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/gifts-keepsakes-01.webp"
+      "image": "assets/products/gifts-keepsakes-02.webp",
+      "images": [
+        "assets/products/gifts-keepsakes-02.webp",
+        "assets/products/gifts-keepsakes-03.webp",
+        "assets/products/gifts-keepsakes-04.webp",
+        "assets/products/gifts-keepsakes-05.webp"
+      ]
     },
     {
-      "id": "gifts-keepsakes-02",
-      "name": "Gifts & Keepsakes — Design 02",
+      "id": "mini-unicorn-keepsake",
+      "name": "Mini Unicorn Keepsake",
       "category": "Gifts & Keepsakes",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keepsake, packaged and finished by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/gifts-keepsakes-02.webp"
+      "image": "assets/products/gifts-keepsakes-06.webp",
+      "images": [
+        "assets/products/gifts-keepsakes-06.webp"
+      ]
     },
     {
-      "id": "gifts-keepsakes-03",
-      "name": "Gifts & Keepsakes — Design 03",
+      "id": "wrapped-gift-bouquet",
+      "name": "Wrapped Gift Bouquet",
       "category": "Gifts & Keepsakes",
       "price": 0,
       "shipDays": 0,
       "description": "A hand-crocheted keepsake, packaged and finished by hand for gifting.",
       "material": "Hand-crocheted yarn / thread",
       "size": "Made to order",
-      "image": "assets/products/gifts-keepsakes-03.webp"
-    },
-    {
-      "id": "gifts-keepsakes-04",
-      "name": "Gifts & Keepsakes — Design 04",
-      "category": "Gifts & Keepsakes",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keepsake, packaged and finished by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/gifts-keepsakes-04.webp"
-    },
-    {
-      "id": "gifts-keepsakes-05",
-      "name": "Gifts & Keepsakes — Design 05",
-      "category": "Gifts & Keepsakes",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keepsake, packaged and finished by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/gifts-keepsakes-05.webp"
-    },
-    {
-      "id": "gifts-keepsakes-06",
-      "name": "Gifts & Keepsakes — Design 06",
-      "category": "Gifts & Keepsakes",
-      "price": 0,
-      "shipDays": 0,
-      "description": "A hand-crocheted keepsake, packaged and finished by hand for gifting.",
-      "material": "Hand-crocheted yarn / thread",
-      "size": "Made to order",
-      "image": "assets/products/gifts-keepsakes-06.webp"
+      "image": "assets/products/gifts-keepsakes-01.webp",
+      "images": [
+        "assets/products/gifts-keepsakes-01.webp"
+      ]
     }
   ]
 }

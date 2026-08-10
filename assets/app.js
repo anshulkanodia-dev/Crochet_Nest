@@ -202,6 +202,7 @@
       '<div class="body">' +
         '<div class="cat">' + esc(p.category) + "</div>" +
         "<h3>" + esc(p.name) + "</h3>" +
+        (photosOf(p).length > 1 ? '<div class="cat">' + photosOf(p).length + " photos</div>" : "") +
         '<div class="foot"><span class="price">' + esc(priceLabel(p)) + '</span><span class="ship">' + esc(makeLabel(p)) + "</span></div>" +
       "</div>" +
     "</a>";
@@ -283,6 +284,33 @@
     });
   }
 
+  function photosOf(p) {
+    var list = (p.images || []).filter(Boolean);
+    if (!list.length && p.image) list = [p.image];
+    return list;
+  }
+
+  function galleryHTML(p) {
+    var list = photosOf(p);
+    if (list.length < 2) return '<div class="main">' + media(p, true) + "</div>";
+    return '<div class="main" id="d-main"><img class="photo" src="' + esc(list[0]) + '" alt="' + esc(p.name) + '"></div>' +
+      '<div class="thumbs" id="d-thumbs">' + list.map(function (src, i) {
+        return '<button class="t' + (i ? "" : " active") + '" data-photo="' + esc(src) + '" aria-label="View photo ' + (i + 1) + '">' +
+          '<img class="photo" loading="lazy" src="' + esc(src) + '" alt=""></button>';
+      }).join("") + "</div>";
+  }
+
+  function wireGallery() {
+    var thumbs = $("#d-thumbs"), main = $("#d-main");
+    if (!thumbs || !main) return;
+    thumbs.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-photo]");
+      if (!btn) return;
+      main.querySelector("img").src = btn.getAttribute("data-photo");
+      $all(".t", thumbs).forEach(function (t) { t.classList.toggle("active", t === btn); });
+    });
+  }
+
   function renderProduct() {
     var root = $("#product-root");
     if (!root) return;
@@ -292,7 +320,7 @@
       if (!p) { root.innerHTML = '<div class="cart-empty" style="padding:100px 0"><span class="em">\uD83E\uDDF6</span>Product not found. <a href="shop.html" style="color:var(--mint)">Back to shop</a></div>'; return; }
       document.title = p.name + " — CrochetNest";
       var pUrl = SITE + "/product.html?id=" + encodeURIComponent(p.id);
-      var pImg = p.image || (SITE + "/assets/logo.png");
+      var pImg = photosOf(p)[0] || (SITE + "/assets/logo.png");
       var desc = (p.description || ("Handmade " + p.category + " from CrochetNest.")).slice(0, 300);
       setMeta('meta[name="description"]', "content", desc);
       setCanonical(pUrl);
@@ -318,7 +346,7 @@
       root.innerHTML =
         '<div class="crumbs"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / ' + esc(p.category) + " / " + esc(p.name) + "</div>" +
         '<div class="detail">' +
-          '<div class="d-gallery"><div class="main">' + media(p, true) + "</div></div>" +
+          '<div class="d-gallery">' + galleryHTML(p) + "</div>" +
           '<div class="d-info">' +
             '<div class="cat">' + esc(p.category) + "</div>" +
             "<h1>" + esc(p.name) + "</h1>" +
@@ -339,6 +367,7 @@
         '<section class="section"><div class="sec-head"><div><div class="kick">You may also like</div><h2>More pieces</h2></div></div>' +
         '<div class="grid">' + others.map(cardHTML).join("") + "</div></section>";
 
+      wireGallery();
       var qty = 1;
       var qv = $("#q-val");
       $("#q-dec").addEventListener("click", function () { qty = Math.max(1, qty - 1); qv.textContent = qty; });
